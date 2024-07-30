@@ -1,0 +1,90 @@
+<?php
+
+/**
+ * driveTrackersActions.
+ *
+ * @package    sf_sandbox
+ * @subpackage driveTracker
+ * @author     Luke Foster
+ * @version    SVN: $Id$
+ */
+class driveTrackersActions extends sfActions
+{
+  /**
+   * Executes index action
+   *
+   * @param sfRequest $request A request object
+   */
+  public function executeIndex(sfWebRequest $request)
+  {
+    $table = Doctrine_Core::getTable('DriveTrackers')->createQuery('u');
+
+    $this->drives = $table->execute();
+
+    app::setPageTitle('Key Safe',$this->getResponse());
+  }
+
+  public function executeNew(sfWebRequest $request)
+  {
+    $this->form = new DriveTrackersForm();
+  }
+
+  public function executeCreate(sfWebRequest $request)
+  {
+    $this->forward404Unless($request->isMethod(sfRequest::POST));
+
+    $this->form = new DriveTrackersForm(null, array('sf_user'=>$this->getUser()));
+
+    $this->processForm($request, $this->form);
+
+    $this->setTemplate('new');
+  }
+  public function executeEdit(sfWebRequest $request)
+  {        
+    $this->forward404Unless($drive_trackers = Doctrine_Core::getTable('DriveTrackers')->createQuery()->addWhere('id=?',$request->getParameter('id'))->fetchOne(), sprintf('Object drive does not exist (%s).', $request->getParameter('id')));
+    //$this->checkdrive_trackersAccess('edit',$drive_trackers);
+        
+    $this->form = new DriveTrackersForm($drive_trackers, array('sf_user'=>$this->getUser()));
+  }
+
+  public function executeUpdate(sfWebRequest $request)
+  {        
+    $this->forward404Unless($request->isMethod(sfRequest::POST) || $request->isMethod(sfRequest::PUT));
+    $this->forward404Unless($drive_trackers = Doctrine_Core::getTable('DriveTrackers')->createQuery()->addWhere('id=?',$request->getParameter('id'))->fetchOne(), sprintf('Object drive does not exist (%s).', $request->getParameter('id')));
+    //$this->checkdrive_trackersAccess('edit',$drive_trackers);
+    
+    $this->form = new DriveTrackersForm($drive_trackers, array('sf_user'=>$this->getUser()));
+
+    $this->processForm($request, $this->form);
+
+    $this->setTemplate('edit');
+  }
+
+  public function executeDelete(sfWebRequest $request)
+  {        
+    //$request->checkCSRFProtection();
+
+    $this->forward404Unless($drive_trackers = Doctrine_Core::getTable('DriveTrackers')->find(array($request->getParameter('id'))), sprintf('Object drive does not exist (%s).', $request->getParameter('id')));
+    //$this->checkProjectsAccess('delete',$projects);
+          
+    $drive_trackers->delete();
+
+    $this->redirect('driveTrackers/index');
+  }
+
+  protected function processForm(sfWebRequest $request, sfForm $form)
+  {    
+    $form->bind($request->getParameter($form->getName()), $request->getFiles($form->getName()));
+    
+    if ($form->isValid())
+    {                                                     
+      if($form->getObject()->isNew()){ $form->setFieldValue('created_at',date('Y-m-d H:i:s')); }
+      
+      $form->protectFieldsValue();
+
+      $drive_trackers = $form->save();
+      
+      $this->redirect('driveTrackers/index');
+    }
+  }
+}
