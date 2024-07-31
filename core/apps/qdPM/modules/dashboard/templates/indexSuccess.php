@@ -22,8 +22,21 @@
 * @license    http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
 */
 ?>
-<?php 
-  echo '<div id="dashboard-csg-box">' . button_tag_modalbox(__('Configure Dashboard'),'dashboard/configure') . '</div> <div class="pull-left"><h1>Welcome [NAME]</h1></div>';
+
+<div class="row" style="margin-bottom:20px; margin-left:2px;">
+  <div class="col-sm-5">
+    <h3 style="font-weight:bold;">A very warm welcome to you <?php echo strtok($sf_user->getAttribute('user')->getName(), ' '); ?> &#128512;</h3>
+  </div>
+  <div class="col-sm-3">
+    
+  </div>
+  
+  <div class="col-sm-4">
+    <?php echo '<div id="dashboard-csg-box">' . button_tag_modalbox(__('Configure Dashboard'),'dashboard/configure') . '</div>'; ?>
+  </div>
+</div>
+
+<?php
   
   //if(count($reports)==0) echo '<br><div>' . __('No reports found to display on dashboard') . '</div>';
   
