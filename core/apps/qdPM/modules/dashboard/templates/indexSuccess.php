@@ -25,7 +25,15 @@
 
 <div class="row" style="margin-bottom:20px; margin-left:2px;">
   <div class="col-sm-5">
-    <h3 style="font-weight:bold;">A very warm welcome to you <?php echo strtok($sf_user->getAttribute('user')->getName(), ' '); ?> &#128512;</h3>
+    <h3 style="font-weight:bold;">
+      <?php
+        if($sf_user->getAttribute('id') == 13){ 
+          echo "This is you " . strtok($sf_user->getAttribute('user')->getName(), ' ') . " &#128169;";
+        }else{
+          echo "A very warm welcome to you " . strtok($sf_user->getAttribute('user')->getName(), ' ') . " &#128512;";
+        }
+      ?> 
+    </h3> 
   </div>
   <div class="col-sm-3">
     

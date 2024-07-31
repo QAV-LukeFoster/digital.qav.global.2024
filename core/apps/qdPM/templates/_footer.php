@@ -26,8 +26,9 @@
 <!-- BEGIN FOOTER -->
 
 <div class="footer">
-	<div class="footer-inner pull-right">
-		<div aligh="right" style="width:200px; background:aliceblue; border-radius:5px; margin-top:8px; font-size:11px; margin-right:-4px; box-shadow:2px 2px #000;">
+	<div class="footer-inner pull-right" style="margin-top:12px; font-size:14px;">
+		<!--
+		<div aligh="right" style="width:600px; background:aliceblue; border-radius:5px; margin-top:8px; font-size:11px; margin-right:-4px; box-shadow:2px 2px #000;">
 			<marquee style="color:slategrey;" truespeed="true" scrollamount="2">
 				Today is <span style="margin-right: 12px; margin-top:2px;"><?php echo  date('l') ?> the <?php echo  date('jS \of F Y') ?></span>
 				<span style="margin-left:200px; margin-top:2px;">James Hampton is our Great and Glorious Leader</span>
@@ -37,6 +38,8 @@
 				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 			</marquee>
 		</div>
+		-->
+		<span style="margin-right: 12px; margin-top:2px;"><?php echo  date('l') ?> the <?php echo  date('jS \of F Y') ?></span>
 	</div>
 	<!--
 	<div class="footer-tools">
