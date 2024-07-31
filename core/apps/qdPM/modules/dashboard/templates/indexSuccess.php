@@ -23,7 +23,7 @@
 */
 ?>
 <?php 
-  echo '<div id="dashboard-csg-box">' . button_tag_modalbox(__('Configure Dashboard'),'dashboard/configure') . '</div>';
+  echo '<div id="dashboard-csg-box">' . button_tag_modalbox(__('Configure Dashboard'),'dashboard/configure') . '</div> <div class="pull-left"><h1>Welcome [NAME]</h1></div>';
   
   //if(count($reports)==0) echo '<br><div>' . __('No reports found to display on dashboard') . '</div>';
   
