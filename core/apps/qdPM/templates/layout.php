@@ -122,7 +122,7 @@
       
       <!-- BEGIN CONTENT -->
       <div class="page-content-wrapper">
-      		<div class="page-content" style="background-image: url(<?php echo public_path('images/container.jpg') ?>); background-size: cover; min-height:90vh;">
+      		<div class="page-content" style="background-image: url(<?php echo public_path('images/container.png') ?>); background-size: cover; min-height:90vh;">
            <div id="ajax-modal" class="modal fade" tabindex="-1" data-replace="true" data-keyboard="true" data-backdrop="static" data-focus-on=".autofocus" style="background-image: url(<?php echo public_path('images/jh_full_alpha.png') ?>); background-size:contain; background-repeat: no-repeat;"></div>
                                  
            <?php if($sf_user->hasFlash('userNotices')) include_partial('global/userNotices', array('userNotices' => $sf_user->getFlash('userNotices'))); ?>
@@ -142,8 +142,6 @@
     
     <?php include_partial('global/footer'); ?>
 
-
-    
 <!-- BEGIN JAVASCRIPTS(Load javascripts at bottom, this will reduce page load time) -->
 <!-- BEGIN CORE PLUGINS -->
 <!--[if lt IE 9]>
@@ -171,13 +169,11 @@
 <?php echo javascript_include_tag('/template/scripts/app.js') ?>
 
 <script>
-jQuery(document).ready(function() {    
-   App.init();
-              
-   qdpm_app_init(); 
-        
-});
-              
+  jQuery(document).ready(function() {    
+    App.init();
+                
+    qdpm_app_init();   
+  });         
 </script>
 
 <!-- END JAVASCRIPTS -->    

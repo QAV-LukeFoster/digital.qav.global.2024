@@ -34,16 +34,15 @@
           echo '<div id="userAlertContainer" class="alert alert-warning"><strong>' . __('Warning') . ':</strong> ' . $userNotices['text'] . '</div>';
         break;
       case 'info':
-          echo '<div id="userAlertContainer" class="alert alert-info">' . $userNotices['text'] . '</div>';
+          echo '<div id="userAlertContainer" class="alert alert-default">' . $userNotices['text'] . '</div>';
         break;  
     }
   }
   else
   {
-    echo '<div class="alert alert-info">' . $userNotices . '</div>';        
+    echo '<div class="alert alert-success">' . $userNotices . '</div>';        
   }
  ?>
-
 
 <script type="text/javascript">
   $(function() {
