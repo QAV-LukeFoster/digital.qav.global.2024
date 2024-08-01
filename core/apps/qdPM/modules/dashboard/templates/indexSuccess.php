@@ -28,7 +28,7 @@
     <h3 style="font-weight:bold;">
       <?php
         if($sf_user->getAttribute('id') == 13){ 
-          echo "This is you " . strtok($sf_user->getAttribute('user')->getName(), ' ') . " &#128169;";
+          echo "You're " . " &#128169; " . strtok($sf_user->getAttribute('user')->getName(), ' ');
         }else{
           echo "A very warm welcome to you " . strtok($sf_user->getAttribute('user')->getName(), ' ') . " &#128512;";
         }

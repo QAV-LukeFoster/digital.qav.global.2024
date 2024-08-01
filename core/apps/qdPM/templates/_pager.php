@@ -31,7 +31,7 @@ if(sfConfig::get('app_rows_limit')>0)
   if ($pager->haveToPaginate() && $sf_context->getModuleName()!='dashboard')
   { 
     
-    echo '<div class="note note-warning">';      
+    echo '<div class="note note-success">';      
     echo  __('Displaying') . ' ' . $pager->getFirstIndice()  . ' - ' .  $pager->getLastIndice();
     
     echo ' &nbsp;&nbsp; ' . link_to('&lt;', $url.$pager->getPreviousPage()) . ' ';
@@ -50,7 +50,7 @@ if(sfConfig::get('app_rows_limit')>0)
   }
   elseif ($pager->haveToPaginate() && $sf_context->getModuleName()=='dashboard')
   {
-    echo '<div class="note note-warning">'  . __('Displaying') . ' ' . $pager->getFirstIndice()  . ' - ' .  $pager->getLastIndice() . '&nbsp;&nbsp;' . link_to(__('View more'),$reports_action . '/view?id=' . $reports_id) . '</div>';    
+    echo '<div class="note note-success">'  . __('Displaying') . ' ' . $pager->getFirstIndice()  . ' - ' .  $pager->getLastIndice() . '&nbsp;&nbsp;' . link_to(__('View more'),$reports_action . '/view?id=' . $reports_id) . '</div>';    
   }
 }
   

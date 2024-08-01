@@ -45,5 +45,5 @@
   
   $(document).bind('click', function() {
     $('#cluetip').hide().removeClass();
-   });   
+   }); 
 </script>

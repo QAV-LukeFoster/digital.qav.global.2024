@@ -73,7 +73,7 @@
                             "sPrevious": "<?php echo __('Previous Page')?>",
                             "sNext": "<?php echo __('Next Page')?>"
                         },
-                        "sInfo": "<?php echo __('Displaying') ?> _START_ - _END_, <?php echo __('Total') ?>: _TOTAL_ "
+                        "sInfo": "<?php echo __('Displaying') ?> _START_ - _END_ <?php echo __('of') ?> <b>_TOTAL_</b> record(s)"
                     }
       });
                       
