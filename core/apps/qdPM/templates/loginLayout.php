@@ -50,7 +50,7 @@
     <?php echo stylesheet_tag('/template/css/style-responsive.css') ?>
     <?php echo stylesheet_tag('/template/css/plugins.css') ?>    
     <?php echo stylesheet_tag('/template/css/pages/login.css') ?>
-    <?php echo stylesheet_tag('/template/css/animate.css') ?>    
+    <?php // echo stylesheet_tag('/template/css/animate.css') ?>    
     <!-- END THEME STYLES -->
     
     <?php echo stylesheet_tag('app.css') ?>
@@ -60,39 +60,9 @@
     ?>
     
     <?php echo javascript_include_tag('/template/plugins/jquery-1.10.2.min.js') ?>
-    
-
     <link rel="shortcut icon" href="<?php echo public_path('favicon.ico') ?>" />
     <link rel="apple-touch-icon" href="<?php echo public_path('favicon.png') ?>" />
-    
-  <?php if(is_file(sfConfig::get('sf_upload_dir')  . '/' . sfConfig::get('app_login_background'))): ?>
-    <style>
-    .login {
-      background: url(<?php echo app::public_path('uploads/' . sfConfig::get('app_login_background')) ?>) no-repeat center center fixed;
-      -webkit-background-size: cover;
-      -moz-background-size: cover;
-      -o-background-size: cover;
-      background-size: cover;  
-    }   
-
-    .login-fade-in{
-      position: fixed;
-      top: 0;
-      right: 0;
-      bottom: 0;
-      left: 0;
-      background-color: #333;
-      opacity: 0.2;
-      z-index: -1; 
-    }
-
-    .copyright{
-      color: white !important;
-    }
-
-    </style>
-  <?php endif ?>        
-    
+    <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">-->
   </head>
   <body class="login" style="background-image: url(<?php echo public_path('images/bg.png') ?>); ">
 
@@ -107,22 +77,13 @@
         </td>
       </tr>
     </table>
-    
   </div>
   
   <div class="login-fade-in"></div>
   
   <div class="login-page-logo">
-   <?php 
-      if(is_file(sfConfig::get('sf_upload_dir')  . '/' . sfConfig::get('app_app_logo')))
-      {
-        echo image_tag('/uploads/' . sfConfig::get('app_app_logo'), array('title'=>sfConfig::get('app_app_name'),'id'=>'navbar-brand-logo'));
-      }
-      else
-      {
-        echo "<div style='font-size: 73px;' class='animate__flip'>QAV Digital</div><!--<br><span style='font-size: 15.5px; color: lightblue;'>From concept to creation, exceeding expectations</span>-->";
-      }         
-    ?>
+
+  <h3 style="font-size: 73px; font-weight:bold;">QAV Digital</h3><!--<br><span style='font-size: 15.5px; color: lightblue;'>From concept to creation, exceeding expectations</span>-->
     
   </div>  
   <!-- BEGIN LOGIN -->
@@ -131,13 +92,13 @@
     
   </div>
   
-  <div class="pull-right" style="margin-top:200px; margin-right:50px;">
-    <?php 
-      if(date('l') == 'Friday')
-      {
-        echo '<img src="/images/friday.png" style="max-width:250px; transform: rotate(-20deg);">';
-      }
-    ?>
+    <div class="pull-right" style="margin-top:160px; margin-right:35px;">
+      <?php 
+        if(date('l') == 'Friday')
+        {
+          echo '<img src="/images/friday.png" style="max-width:250px; transform: rotate(-20deg);">';
+        }
+      ?>
     </div>
   </div> 
 

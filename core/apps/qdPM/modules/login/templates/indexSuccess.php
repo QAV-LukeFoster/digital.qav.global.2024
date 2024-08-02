@@ -30,48 +30,9 @@
 <?php echo $form->renderHiddenFields(false) ?>
 <?php echo $form->renderGlobalErrors() ?>
 
-<style>
-  #_jh{
-
-  animation-name: spin;
-  animation-duration: 3000ms;
-  animation-iteration-count: infinite;
-  animation-timing-function: linear; 
-  /* transform: rotate(3deg); */
-   /* transform: rotate(0.3rad);/ */
-   /* transform: rotate(3grad); */ 
-   /* transform: rotate(.03turn);  */
-}
-
-@keyframes spin {
-    from {
-        transform:rotate(0deg);
-    }
-    to {
-        transform:rotate(360deg);
-    }
-}
-
-@keyframes pulse {
-	0% {
-		transform: scale(0.95);
-
-	}
-
-	70% {
-		transform: scale(1);
-
-	}
-
-	100% {
-		transform: scale(0.95);
-
-	}
-}
-</style>
-
 <div align="center" style="margin-top:-10px; margin-bottom:15px;">
-  <img id="jh" src="<?php echo public_path('images/jh.png') ?>" style="max-width:200px; opacity:0.8; margin-bottom:12px;">
+  
+  <img class="animate__pulse" src="/images/jh.png" style="max-width:200px; opacity:0.8; margin-bottom:12px;">
     <br>
     <small style="font-size:9px; color:slategrey;">
       <div wrapper id="quote-box" align="center" style="max-width:170px; color:#7d7d7d;">
@@ -112,17 +73,6 @@
 
   <div class="forget-password"></div>
 </div>
-
-<?php
-/*
-if(sfConfig::get('app_use_ldap_login')=='on')
-{
-  echo '
-  <div class="create-account">	
-	 <p>' . link_to('LDAP Login','login/ldap') . '</p>
-  </div>';
-*/
-?>
 
   <?php
   $http_referer = '';
