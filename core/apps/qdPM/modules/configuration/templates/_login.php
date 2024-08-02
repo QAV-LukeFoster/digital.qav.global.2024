@@ -48,7 +48,6 @@
         echo '<div>' . sfConfig::get('app_login_background') . '</div>' . input_checkbox_tag('delete_login_background') . ' <label for="delete_login_background">' . __('Delete') . '</label>';
       }  
 ?>      
-
     <span class="help-block">
        (*.jpg, *.png)
     </span>

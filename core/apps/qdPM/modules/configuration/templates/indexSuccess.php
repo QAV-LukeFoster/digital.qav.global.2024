@@ -30,8 +30,6 @@
     {       
        $type = 'general';
     }
-    
-    
   
   if($sf_request->hasParameter('type'))
   {

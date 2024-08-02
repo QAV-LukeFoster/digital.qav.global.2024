@@ -48,7 +48,7 @@
     
 ?>
 
-<div id="page_width"></div>
+<div id="page_width" style="max-width:1645px;"></div>
 
 <div class="gantt" id="GanttChartDIV"></div>
 

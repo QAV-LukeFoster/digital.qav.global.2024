@@ -45,6 +45,7 @@
   {
     if($user = Doctrine_Core::getTable('Users')->find($users_id))
     {
+      // echo renderUserPhoto($user->getPhoto());
       echo  $user->getName()  . '<br>';
     }
   }
