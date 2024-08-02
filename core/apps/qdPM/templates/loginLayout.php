@@ -92,7 +92,7 @@
     
   </div>
   
-    <div class="pull-right" style="margin-top:160px; margin-right:35px;">
+    <div class="pull-right" style="margin-top:240px; margin-right:35px;">
       <?php 
         if(date('l') == 'Friday')
         {
@@ -138,6 +138,36 @@
         },{
           quote:"Success is where preparation and opportunity meet.",
           author:"Bobby Unser"
+        },{
+          quote:"All that Mathew wants is to be a real boy.",
+          author:"Bobby Unser"
+        },{
+          quote:"It is very probable that Mathew has been punched in the face many, many times in his short life.",
+          author:"Bobby Unser"
+        },{
+          quote:"Don't be fooled by these rocks that I got, I'm just - I'm just Jenny from the Block",
+          author:"Bobby Unser"
+        },{
+          quote:"Mathew has a brand-new combine harvester.",
+          author:"Bobby Unser"
+        },{
+          quote:"Mathew does not believe that insects are real.",
+          author:"Bobby Unser"
+        },{
+          quote:"Mathew does not believe that insects are real.",
+          author:"Bobby Unser"
+        },{
+          quote:"Mathew currently worships Jesus of Nuneaton.",
+          author:"Bobby Unser"
+        },{
+          quote:"Mathew plays the spoons at family get-togethers.",
+          author:"Bobby Unser"
+        },{
+          quote:"Mathew is more effective than Diazepam in inducing unconsciousness.",
+          author:"Bobby Unser"
+        },{
+          quote:"Mathew once worked at a famous department store.",
+          author:"Bobby Unser"
         },
       
       ];
@@ -146,9 +176,10 @@
         var randomNumber = Math.floor(Math.random()* sourceLength);
         
         var newQuoteText = quotes[randomNumber].quote;
-          var newQuoteName = quotes[randomNumber].author;
+        // var newQuoteName = quotes[randomNumber].author;
+
         $("#text").text(newQuoteText);
-      $("#author").text(newQuoteName);
+        $("#author").text(newQuoteName);
 
 
 

@@ -32,7 +32,7 @@
 
 <div align="center" style="margin-top:-10px; margin-bottom:15px;">
   
-  <img class="animate__pulse" src="/images/jh.png" style="max-width:200px; opacity:0.8; margin-bottom:12px;">
+  <img class="animate__pulse" src="/images/qav.png" style="min-width:300px; margin-top:30px; margin-bottom:20px;">
     <br>
     <small style="font-size:9px; color:slategrey;">
       <div wrapper id="quote-box" align="center" style="max-width:170px; color:#7d7d7d;">
