@@ -2,9 +2,9 @@ all:
   doctrine:
     class: sfDoctrineDatabase
     param:
-      dsn: 'mysql:dbname=db_name;host=localhost'
+      dsn: 'mysql:dbname=qdpm_z800;host=192.168.10.234'
       profiler: false
-      username: db_username
-      password: db_password
+      username: qdpm
+      password: Q@v652500
       attributes:
         quote_identifier: true

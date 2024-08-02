@@ -86,7 +86,7 @@ class menuController
       $s[] = array('title'=>__('My Scheduler') ,'url'=>'scheduler/personal','class'=>'fa-calendar','counts'=>$count);             
     }
     
-    if(sfConfig::get('app_use_skins')=='on')$s[] = array('title'=>__('Change Skin'),'url'=>'skins/index','modalbox'=>true,'class'=>'fa-picture-o');
+    // if(sfConfig::get('app_use_skins')=='on')$s[] = array('title'=>__('Change Skin'),'url'=>'skins/index','modalbox'=>true,'class'=>'fa-picture-o');
     
     $s[] = array('title'=>__('Logoff'),'url'=>'login/logoff','is_hr'=>true,'class'=>'fa-sign-out');            
             

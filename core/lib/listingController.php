@@ -146,7 +146,7 @@ class listingController
   
   public function rednerMultipleSelectTh($table_id='')
   {
-    return '<th class="table-checkbox"  data-bSortable="false"><input class="group-checkable" data-set="#' . $table_id . ' .checkboxes"  type="checkbox"></th>';
+    return '<th class="table-checkbox" data-bSortable="false"><input class="group-checkable" data-set="#' . $table_id . ' .checkboxes"  type="checkbox"></th>';
   }
   
   public function rednerMultipleSelectTd($id)

@@ -30,11 +30,12 @@
         if($sf_user->getAttribute('id') == 13){ 
           echo "You're " . " &#128169; " . strtok($sf_user->getAttribute('user')->getName(), ' ');
         }else{
-          echo "A very warm welcome to you " . strtok($sf_user->getAttribute('user')->getName(), ' ') . " &#128512;";
+          echo "A very warm welcome to you " . strtok($sf_user->getAttribute('user')->getName(), ' ') . " <span style='font-size:28px;'>&#128512;</span>";
         }
       ?> 
     </h3> 
   </div>
+
   <div class="col-sm-3">
     
   </div>

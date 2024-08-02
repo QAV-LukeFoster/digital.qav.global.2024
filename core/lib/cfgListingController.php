@@ -75,7 +75,7 @@ class cfgListingController
 	  //$attributes = array('type'=>'image','title'=>__('Edit'),'class'=>'actionIcon iconEdit','src'=>public_path('images/icons/edit.png',true),'onClick'=>'openModalBox(\'' . url_for($this->module . '/edit?id=' . $id . $this->add_url_params('&'),true) . '\')');
     //return $f->render('',__('Edit'),$attributes);
     
-    return '<a href="#" class="btn btn-warning btn-xs" onClick="openModalBox(\'' . url_for($this->module . '/edit?id=' . $id . $this->add_url_params('&'),true) . '\'); return false;"><i class="fa fa-edit"></i></a>';
+    return '<a href="#" class="btn btn-warning btn-xs" onClick="openModalBox(\'' . url_for($this->module . '/edit?id=' . $id . $this->add_url_params('&'),true) . '\'); return false;"><i class="fa fa-edit" style="margin-left:4px;"></i></a>';
   }
         
   public function delete_button($id)

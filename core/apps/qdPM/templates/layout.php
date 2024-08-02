@@ -53,7 +53,8 @@
     <?php echo stylesheet_tag('/template/css/style-conquer.css') ?>
     <?php echo stylesheet_tag('/template/css/style.css') ?>
     <?php echo stylesheet_tag('/template/css/style-responsive.css') ?>
-    <?php echo stylesheet_tag('/template/css/plugins.css') ?>            
+    <?php echo stylesheet_tag('/template/css/plugins.css') ?>
+    <?php echo stylesheet_tag('/template/css/animate.css') ?>          
     <!-- END THEME STYLES -->
     
     <?php echo stylesheet_tag('/template/plugins/bootstrap-modal/css/bootstrap-modal-bs3patch.css') ?>
@@ -75,7 +76,7 @@
     <?php echo javascript_include_tag('/template/plugins/ckeditor/ckeditor.js') ?>    
     <?php echo javascript_include_tag('app.js') ?>
     <?php echo javascript_include_tag('cluetip1.2.5/jquery.cluetip.min.js') ?>
-    <?php echo stylesheet_tag('/js/cluetip1.2.5/jquery.cluetip.css') ?>
+    <?php echo stylesheet_tag('/js/cluetip1.2.5/jquery.cluetip.css') ?>    
     
     <script>
     
@@ -118,26 +119,28 @@
           background:slategray;
           color:#fff;
         }
+        .modal-footer{
+          background:slategray;
+          color:#fff;
+        }
       </style>
       
       <!-- BEGIN CONTENT -->
       <div class="page-content-wrapper">
-      		<div class="page-content" style="background-image: url(<?php echo public_path('images/container.png') ?>); background-size: cover; min-height:90vh;">
-           <div id="ajax-modal" class="modal fade" tabindex="-1" data-replace="true" data-keyboard="true" data-backdrop="static" data-focus-on=".autofocus" style="background-image: url(<?php echo public_path('images/jh_full_alpha.png') ?>); background-size:contain; background-repeat: no-repeat;"></div>
+      		<div class="page-content" style="background-image: url(<?php echo public_path('images/container.png') ?>); background-size:cover; min-height:90vh;">
+            <div id="ajax-modal" class="modal fade" tabindex="-1" data-replace="true" data-keyboard="true" data-backdrop="static" data-focus-on=".autofocus" style="background-image: url(<?php echo public_path('images/container.png') ?>); background-size:cover; background-repeat:no-repeat;"></div>
                                  
-           <?php if($sf_user->hasFlash('userNotices')) include_partial('global/userNotices', array('userNotices' => $sf_user->getFlash('userNotices'))); ?>
-           <?php if(is_dir(sfConfig::get('sf_web_dir') . '/install')) include_partial('global/userNotices', array('userNotices' => array('text'=>__('Please remove \'install\' folder'),'type'=>'warning'))); ?>
-            
-           <?php //include_partial('global/styles'); ?>
+              <?php if($sf_user->hasFlash('userNotices')) include_partial('global/userNotices', array('userNotices' => $sf_user->getFlash('userNotices'))); ?>
+              <?php if(is_dir(sfConfig::get('sf_web_dir') . '/install')) include_partial('global/userNotices', array('userNotices' => array('text'=>__('Please remove \'install\' folder'),'type'=>'warning'))); ?>
+              
+              <?php //include_partial('global/styles'); ?>
 
-           <?php echo $sf_content ?> 
-          <!-- END PAGE CONTENT-->
-      		</div>
-
+              <?php echo $sf_content ?> 
+              <!-- END PAGE CONTENT-->
+      		  </div>
+          </div>
+          <!-- END CONTENT -->
       </div>
-      <!-- END CONTENT -->
-    
-    </div>
     <!-- END CONTAINER -->
     
     <?php include_partial('global/footer'); ?>

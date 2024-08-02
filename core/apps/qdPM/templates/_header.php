@@ -28,11 +28,9 @@
 	 
 	<div class="header-inner">
 		<!-- BEGIN LOGO -->
-		
-				
-    <?php             
-      echo '<a class="navbar-brand" href="' . url_for("dashboard/index") . '" style="margin-left:-16px;"> <img src="/images/jh.png" style="max-width:35px;"> P.M ' . sfConfig::get('app_app_name') . '</a>';              
-    ?>		
+		<?php             
+		echo '<a class="navbar-brand" href="' . url_for("dashboard/index") . '" style="margin-left:-16px;"> <img src="/images/jh.png" style="max-width:35px;"> P.M ' . sfConfig::get('app_app_name') . '</a>';              
+		?>		
 		<!-- END LOGO -->
 		<!-- BEGIN RESPONSIVE MENU TOGGLER -->
 		<a href="javascript:;" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">		

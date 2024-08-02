@@ -49,7 +49,8 @@
     <?php echo stylesheet_tag('/template/css/style.css') ?>
     <?php echo stylesheet_tag('/template/css/style-responsive.css') ?>
     <?php echo stylesheet_tag('/template/css/plugins.css') ?>    
-    <?php echo stylesheet_tag('/template/css/pages/login.css') ?>     
+    <?php echo stylesheet_tag('/template/css/pages/login.css') ?>
+    <?php echo stylesheet_tag('/template/css/animate.css') ?>    
     <!-- END THEME STYLES -->
     
     <?php echo stylesheet_tag('app.css') ?>
@@ -119,7 +120,7 @@
       }
       else
       {
-        echo "<span style='font-size: 73px;'>QAV Digital</span><br><span style='font-size: 15.5px; color: lightblue;'>From concept to creation, exceeding expectations</span>";
+        echo "<div style='font-size: 73px;' class='animate__flip'>QAV Digital</div><!--<br><span style='font-size: 15.5px; color: lightblue;'>From concept to creation, exceeding expectations</span>-->";
       }         
     ?>
     

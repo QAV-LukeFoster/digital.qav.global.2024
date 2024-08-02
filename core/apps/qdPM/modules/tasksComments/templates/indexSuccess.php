@@ -123,7 +123,7 @@ $lc = new cfgListingController($sf_context->getModuleName(),'projects_id=' . $sf
         <div><?php include_component('attachments','attachmentsList',array('bind_type'=>'comments','bind_id'=>$c['id'])) ?></div>
         <div><?php include_component('tasksComments','info',array('c'=>$c)) ?></div>
       </td>
-      <td align="right"><?php echo app::dateTimeFormat($c['created_at']) . '<br>' . $c['Users']['name'] . '<br><br>' . '<b>I NEED HELP</b>' ?></td>      
+      <td align="right"><?php echo app::dateTimeFormat($c['created_at']) . '<br>' . $c['Users']['name'] . '' ?></td>      
     </tr>
     <?php endforeach; ?>
     <?php if(count($tasks_comments)==0) echo '<tr><td colspan="3">' . __('No Records Found') . '</td></tr>' ?>
@@ -144,7 +144,7 @@ $lc = new cfgListingController($sf_context->getModuleName(),'projects_id=' . $sf
     
     <div class="col-md-3">
 
-    <div class="panel panel-info item-details">
+    <div class="panel panel-default item-details">
   		<div class="panel-heading">  			
   			 <h3 class="panel-title"><?php echo __('Details') ?></h3>  			
   		</div>
