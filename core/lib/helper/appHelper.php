@@ -77,7 +77,7 @@ function ajax_modal_template_footer_simple()
 
 function renderUserPhoto($img,$attributes = array())
 {  
-  $attributes = array_merge(array('class'=>'user-photo img-circle','absolute'=>true, 'style'=>'border-radius:25px; width:35px; height:35px; margin-right:8px;'),$attributes);
+  $attributes = array_merge(array('class'=>'user-photo img-circle','absolute'=>true, 'style'=>'border-radius:50%;'),$attributes);
   
   if(strlen($img)>0)
   {

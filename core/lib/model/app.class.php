@@ -1291,6 +1291,7 @@ class app
             'tickets',
             'tasks_groups',
             'versions',
+            'projects_drive_trackers',
             'projects_phases',
             'projects_reports',
             'projects_comments',

@@ -73,8 +73,8 @@ abstract class BaseDriveTrackers extends sfDoctrineRecord
              'autoincrement' => false,
              'length' => 6,
              ));
-        $this->hasColumn('type', 'string', 15, array(
-             'type' => 'string',
+        $this->hasColumn('type', 'integer', 15, array(
+             'type' => 'integer',
              'fixed' => 0,
              'unsigned' => false,
              'primary' => false,

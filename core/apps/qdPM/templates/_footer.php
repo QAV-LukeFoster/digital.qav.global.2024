@@ -41,7 +41,7 @@
 	</div>
 	<div class="footer-tools" style="margin-right:18px; margin-top:9px;">
 		<span class="go-top">
-			<i class="fa fa-angle-up"></i>
+			<i class="fa fa-angle-up" style=""></i>
 		</span>
 	</div>
 </div>

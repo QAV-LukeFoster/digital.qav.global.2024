@@ -12,7 +12,6 @@
  */
 class DriveTrackers extends BaseDriveTrackers
 {
-
     public static function getSchema()
         {
         $drives =  Doctrine_Core::getTable('DriveTrackers')->createQuery('d')        
