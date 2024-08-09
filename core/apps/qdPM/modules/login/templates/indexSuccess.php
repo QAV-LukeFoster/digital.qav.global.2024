@@ -35,11 +35,10 @@
 
 <?php // if($sf_user->hasFlash('userNotices')) include_partial('global/userNotices', array('userNotices' => $sf_user->getFlash('userNotices'))); ?>
 
-<div class="form-group">
+<div class="form-group" style="padding-top:8px;">
   <!--ie8, ie9 does not support html5 placeholder, so we just show field title for that-->
   <!--<label class="control-label visible-ie8 visible-ie9"><?php // echo $form['email']->renderLabelName() ?></label>-->
   <div class="input-icon">
-  	<i class="fa fa-envelope"></i>
   	<input class="form-control placeholder-no-fix required email" type="text" autocomplete="off" placeholder="Username" name="login[email]" style="box-shadow: 2px 3px #7d7d7d;"/>
   </div>
 </div>
@@ -47,7 +46,6 @@
 <div class="form-group">
 	<!--<label class="control-label visible-ie8 visible-ie9"><?php // echo $form['password']->renderLabelName() ?></label>-->
 	<div class="input-icon">
-		<i class="fa fa-lock"></i>
 		<input class="form-control placeholder-no-fix required" type="password" autocomplete="off" placeholder="<?php echo $form['password']->renderLabelName() ?>" name="login[password]" style="box-shadow: 2px 3px #7d7d7d;"/>
 	</div>
 </div>
@@ -58,7 +56,7 @@
 
       <!--<label class="checkbox"><?php // echo link_to(__('Password forgotten?'),'login/restorePassword'); ?></label>-->
         
-      <button type="submit" class="btn btn-success pull-right" style="text-shadow: 1px 1px #7d7d7d;"> <?php echo __('Login') ?> </button>
+      <button type="submit" class="btn btn-success pull-right" style="text-shadow: 1px 1px #899bcf;"> <?php echo __('Login') ?> </button>
   </div>
 
   <!--<div class="forget-password"></div>-->

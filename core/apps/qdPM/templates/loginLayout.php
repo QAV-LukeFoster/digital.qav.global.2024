@@ -65,9 +65,42 @@
     <?php echo javascript_include_tag('/template/plugins/jquery-1.10.2.min.js') ?>
     <link rel="shortcut icon" href="<?php echo public_path('favicon.ico') ?>" />
     <link rel="apple-touch-icon" href="<?php echo public_path('favicon.png') ?>" />
-    <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">-->
+    <style>
+      #bg-image {
+        position: fixed;
+
+        top: 0;
+        right: 0;
+
+        width: 100%;
+        height: auto;
+
+        z-index: -10;
+
+        animation-name: kenburns-top;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+      }
+
+      @-webkit-keyframes kenburns-top {
+        0% {
+          -webkit-transform: scale(1) translateY(0);
+          transform: scale(1) translateY(0);
+          -webkit-transform-origin: 50% 16%;
+          transform-origin: 50% 16%;
+        }
+        100% {
+          -webkit-transform: scale(1.25) translateY(-15px);
+          transform: scale(1.25) translateY(-15px);
+          -webkit-transform-origin: top;
+          transform-origin: top;
+        }
+      }
+    </style>
   </head>
-  <body class="login" style="background-image: url(<?php echo public_path('images/bg.png') ?>); ">
+  <body class="login">
+  
+  
 
   <div class="form-body">
         
@@ -94,8 +127,8 @@
                 <div class="form-content">
                 
                     <div class="form-items">
-                    <h3 id="element1" style="font-size: 73px; font-weight:bold; text-shadow: 1px 1px #7d7d7d;"><span style="color:#7d7d7d; font-size: 76px; font-weight:bold;">D</span><span>IGITAL</span></h3>
-                      <div class="content" style="margin-bottom:40px;">
+                    <h3 id="element1" style="font-size: 73px; font-weight:bold;"><span style="font-size: 84px; font-weight:bold;">D</span><span style="">IGITAL</span></h3>
+                      <div  id="loginform" class="content" style="margin-bottom:40px;">
                         <?php echo $sf_content ?>
                       </div>
                         
@@ -192,37 +225,9 @@
           quote:"Success is where preparation and opportunity meet.",
           author:"Bobby Unser"
         },{
-          quote:"All that Mathew wants is to be a real boy.",
-          author:"Bobby Unser"
-        },{
-          quote:"It is very probable that Mathew has been punched in the face many, many times in his short life.",
-          author:"Bobby Unser"
-        },{
           quote:"Don't be fooled by these rocks that I got, I'm just - I'm just Jenny from the Block",
           author:"Bobby Unser"
-        },{
-          quote:"Mathew has a brand-new combine harvester.",
-          author:"Bobby Unser"
-        },{
-          quote:"Mathew believes that the Earth is flat.",
-          author:"Bobby Unser"
-        },{
-          quote:"Mathew does not believe that birds are real.",
-          author:"Bobby Unser"
-        },{
-          quote:"Mathew is a little bit simple.",
-          author:"Bobby Unser"
-        },{
-          quote:"Mathew plays the spoons at family get-togethers.",
-          author:"Bobby Unser"
-        },{
-          quote:"Mathew is more effective than Diazepam in inducing unconsciousness.",
-          author:"Bobby Unser"
-        },{
-          quote:"Mathew once worked at a famous department store.",
-          author:"Bobby Unser"
-        },
-      
+        }      
       ];
 
         var sourceLength = quotes.length;
@@ -249,10 +254,13 @@
     //element3.classList.add('animate__animated', 'animate__fadeInLeftBig');
 
     const element4 = document.querySelector('#text');
-    element4.classList.add('animate__animated', 'animate__zoomIn', 'animate__delay-1s');
+    element4.classList.add('animate__animated', 'animate__fadeInLeft', 'animate__delay-3s');
 
-    const element5 = document.querySelector('#element5');
-    element5.classList.add('animate__animated', 'animate__flash', 'animate__infinite', 'animate__slower');
+    //const element5 = document.querySelector('#element5');
+    //element5.classList.add('animate__animated', 'animate__flash', 'animate__infinite', 'animate__slower');
+
+    const loginform = document.querySelector('#loginform');
+    loginform.classList.add('animate__animated', 'animate__fadeIn', 'animate__delay-1s');
     
     </script>
   

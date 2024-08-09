@@ -57,6 +57,8 @@ body {
 .img-holder {
     width: 550px;
     background-color: #000000;
+    border-right: solid 1px #fff;
+    box-shadow: 1px 1px #899bcf;
 }
 
 .img-holder .info-holder h3 {
@@ -555,11 +557,7 @@ body {
         left: 50px;
         right: initial;
         bottom: initial;
-    }
-
-    .website-logo .logo {
-        background-image: url("../images/logo-light.svg");
-    }
+    
 
     .form-body.without-side .website-logo .logo {
         background-image: url("../images/qav.png");
