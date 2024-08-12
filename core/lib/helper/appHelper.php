@@ -43,7 +43,7 @@ function ajax_modal_template_footer($action_button_tille = false,$extra_buttons 
   $html = '            
   <div class="modal-footer"">
     ' . $extra_buttons . '
-    <div class="pull-left" style="font-size:24px;">&#129322;</div>
+    <div class="pull-left" style="font-size:24px;"></div>
     <button type="submit" class="btn btn-success" style="border: solid 1px #ffffff;">' .  ($action_button_tille ? $action_button_tille:__('Save')) . '</button>
     <button type="button" class="btn btn-danger" style="border: solid 1px #ffffff;" data-dismiss="modal">' .  __('Close') . '</button>    
   </div>';

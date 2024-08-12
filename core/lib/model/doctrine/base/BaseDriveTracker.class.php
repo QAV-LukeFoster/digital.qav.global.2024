@@ -1,6 +1,6 @@
 <?php
 // Connection Component Binding
-Doctrine_Manager::getInstance()->bindComponent('DriveTracker', 'doctrine');
+Doctrine_Manager::getInstance()->bindComponent('DriveTrackers', 'doctrine');
 
 /**
  * BaseDriveTracker

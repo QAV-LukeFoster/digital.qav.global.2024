@@ -1,0 +1,38 @@
+Aug 09 08:24:49 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'dashboard',  'action' => 'index',)
+Aug 09 09:24:49 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /ProjectDriveTracker/index with parameters array (  'module' => 'ProjectDriveTracker',  'action' => 'index',)
+Aug 09 09:24:49 symfony [info] {sfFilterChain} Executing filter "sfFakeRenderingFilter"
+Aug 09 09:24:49 symfony [info] {sfFilterChain} Executing filter "sfBasicSecurityFilter"
+Aug 09 09:24:49 symfony [info] {sfBasicSecurityFilter} Action "ProjectDriveTracker/index" requires authentication, forwarding to "login/index"
+Aug 09 09:24:49 symfony [info] {sfFilterChain} Executing filter "sfFakeRenderingFilter"
+Aug 09 09:24:49 symfony [info] {sfFilterChain} Executing filter "sfBasicSecurityFilter"
+Aug 09 09:24:49 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Aug 09 09:24:49 symfony [info] {loginActions} Call "loginActions->executeIndex()"
+Aug 09 09:24:49 symfony [info] {loginActions} Change layout to "loginLayout"
+Aug 09 09:24:49 symfony [info] {sfPHPView} Render "/var/www/html/9.3/core/apps/qdPM/modules/login/templates/indexSuccess.php"
+Aug 09 09:24:49 symfony [info] {sfPartialView} Render "/var/www/html/9.3/core/apps/qdPM/templates/_formValidator.php"
+Aug 09 09:24:49 symfony [info] {sfPHPView} Decorate content with "/var/www/html/9.3/core/apps/qdPM/templates/loginLayout.php"
+Aug 09 09:24:49 symfony [info] {sfPHPView} Render "/var/www/html/9.3/core/apps/qdPM/templates/loginLayout.php"
+Aug 09 09:24:49 symfony [info] {sfWebResponse} Send content (12915 o)
+Aug 09 08:24:49 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'dashboard',  'action' => 'index',)
+Aug 09 09:24:49 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /bitlocker/index with parameters array (  'module' => 'bitlocker',  'action' => 'index',)
+Aug 09 09:24:49 symfony [info] {sfFrontWebController} Action "bitlocker/index" does not exist
+Aug 09 09:24:49 symfony [err] {sfError404Exception} Action "bitlocker/index" does not exist.
+Aug 09 08:28:48 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'dashboard',  'action' => 'index',)
+Aug 09 09:28:48 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /ProjectDriveTracker/index with parameters array (  'module' => 'ProjectDriveTracker',  'action' => 'index',)
+Aug 09 09:28:49 symfony [info] {sfFilterChain} Executing filter "sfFakeRenderingFilter"
+Aug 09 09:28:49 symfony [info] {sfFilterChain} Executing filter "sfBasicSecurityFilter"
+Aug 09 09:28:49 symfony [info] {sfBasicSecurityFilter} Action "ProjectDriveTracker/index" requires authentication, forwarding to "login/index"
+Aug 09 09:28:49 symfony [info] {sfFilterChain} Executing filter "sfFakeRenderingFilter"
+Aug 09 09:28:49 symfony [info] {sfFilterChain} Executing filter "sfBasicSecurityFilter"
+Aug 09 09:28:49 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Aug 09 09:28:49 symfony [info] {loginActions} Call "loginActions->executeIndex()"
+Aug 09 09:28:49 symfony [info] {loginActions} Change layout to "loginLayout"
+Aug 09 09:28:49 symfony [info] {sfPHPView} Render "/var/www/html/9.3/core/apps/qdPM/modules/login/templates/indexSuccess.php"
+Aug 09 09:28:49 symfony [info] {sfPartialView} Render "/var/www/html/9.3/core/apps/qdPM/templates/_formValidator.php"
+Aug 09 09:28:49 symfony [info] {sfPHPView} Decorate content with "/var/www/html/9.3/core/apps/qdPM/templates/loginLayout.php"
+Aug 09 09:28:49 symfony [info] {sfPHPView} Render "/var/www/html/9.3/core/apps/qdPM/templates/loginLayout.php"
+Aug 09 09:28:49 symfony [info] {sfWebResponse} Send content (12915 o)
+Aug 09 08:28:49 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'dashboard',  'action' => 'index',)
+Aug 09 09:28:49 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /bitlocker/index with parameters array (  'module' => 'bitlocker',  'action' => 'index',)
+Aug 09 09:28:49 symfony [info] {sfFrontWebController} Action "bitlocker/index" does not exist
+Aug 09 09:28:49 symfony [err] {sfError404Exception} Action "bitlocker/index" does not exist.

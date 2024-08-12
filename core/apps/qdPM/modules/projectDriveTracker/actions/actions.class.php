@@ -8,7 +8,7 @@
  * @author     QAV Digital
  * @version    SVN: $Id$
  */
-class ProjectDriveTrackerActions extends sfActions
+class projectDriveTrackerActions extends sfActions
 {
   /**
    * Executes index action
