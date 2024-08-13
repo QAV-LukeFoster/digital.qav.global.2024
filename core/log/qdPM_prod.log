@@ -15,3 +15,29 @@ Aug 06 14:45:30 symfony [err] {sfError404Exception} Action "template/css" does n
 Aug 06 14:45:30 symfony [err] {sfError404Exception} Action "template/css" does not exist.
 Aug 06 14:45:43 symfony [err] {sfError404Exception} Action "template/css" does not exist.
 Aug 06 14:46:02 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/images/bg.jpg" (/).
+Aug 12 10:29:39 symfony [crit] {InvalidArgumentException} Widget "capacity (GB)" does not exist.
+Aug 12 10:29:56 symfony [crit] {InvalidArgumentException} Widget "capacity (GB)" does not exist.
+Aug 12 11:17:52 symfony [crit] {sfException} Call to undefined method DriveTrackersForm::getFieldValue.
+Aug 12 11:23:42 symfony [crit] {sfRenderException} The template "createSuccess.php" does not exist or is unreadable in "".
+Aug 12 11:26:23 symfony [crit] {sfRenderException} The template "createSuccess.php" does not exist or is unreadable in "".
+Aug 12 11:29:21 symfony [crit] {sfRenderException} The template "createSuccess.php" does not exist or is unreadable in "".
+Aug 12 11:29:47 symfony [crit] {sfRenderException} The template "createSuccess.php" does not exist or is unreadable in "".
+Aug 12 11:34:20 symfony [crit] {sfRenderException} The template "createSuccess.php" does not exist or is unreadable in "".
+Aug 12 11:34:49 symfony [crit] {sfException} Call to undefined method DriveTrackersForm::getParameter.
+Aug 12 11:35:21 symfony [crit] {sfRenderException} The template "createSuccess.php" does not exist or is unreadable in "".
+Aug 12 11:46:50 symfony [crit] {sfRenderException} The template "createSuccess.php" does not exist or is unreadable in "".
+Aug 12 11:53:00 symfony [crit] {sfRenderException} The template "deleteSuccess.php" does not exist or is unreadable in "".
+Aug 12 11:53:21 symfony [err] {sfError404Exception} Object drive does not exist (1).
+Aug 12 13:39:55 symfony [crit] {RuntimeException} sfWidgetFormChoice requires the following options: 'choices'.
+Aug 12 14:18:47 symfony [crit] {sfRenderException} The template "createSuccess.php" does not exist or is unreadable in "".
+Aug 12 14:20:22 symfony [crit] {sfRenderException} The template "createSuccess.php" does not exist or is unreadable in "".
+Aug 12 14:59:45 symfony [crit] {Doctrine_Connection_Mysql_Exception} SQLSTATE[42S22]: Column not found: 1054 Unknown column 'd.s' in 'field list'. Failing Query: "SELECT `d`.`id` AS `d__id`, `d`.`s` AS `d__s`, CAST(`d`.`name` AS SIGNED) AS `d__0` FROM `drive_trackers` `d`"
+Aug 12 15:01:58 symfony [crit] {Doctrine_Exception} Couldn't find class s
+Aug 12 15:02:07 symfony [crit] {Doctrine_Exception} Couldn't find class s
+Aug 12 15:02:50 symfony [crit] {Doctrine_Exception} Couldn't find class s
+Aug 12 15:03:00 symfony [crit] {Doctrine_Connection_Mysql_Exception} SQLSTATE[42S22]: Column not found: 1054 Unknown column 'd.u' in 'field list'. Failing Query: "SELECT `d`.`id` AS `d__id`, `d`.`u` AS `d__u`, CAST(`d`.`name` AS SIGNED) AS `d__0` FROM `drive_trackers` `d`"
+Aug 13 11:08:33 symfony [crit] {Doctrine_Connection_Mysql_Exception} SQLSTATE[42S22]: Column not found: 1054 Unknown column 'd.s' in 'field list'. Failing Query: "SELECT `d`.`id` AS `d__id`, `d`.`s` AS `d__s`, MAX(`d`.`name`) AS `d__0` FROM `drive_trackers` `d`"
+Aug 13 11:08:57 symfony [crit] {Doctrine_Exception} Couldn't find class s
+Aug 13 11:09:22 symfony [crit] {Doctrine_Exception} Couldn't find class s
+Aug 13 11:09:24 symfony [crit] {Doctrine_Exception} Couldn't find class s
+Aug 13 11:09:33 symfony [crit] {Doctrine_Exception} Couldn't find class s

@@ -8,12 +8,12 @@
  * @package    sf_sandbox
  * @subpackage model
  * @author     Luke Foster
- * @version    SVN: $Id: Builder.php 7490 2010-03-29 19:53:27Z jwage $
+ * @version    SVN: $Id
  */
 class DriveTrackers extends BaseDriveTrackers
 {
     public static function getSchema()
-        {
+    {
         $drives =  Doctrine_Core::getTable('DriveTrackers')->createQuery('d')        
             ->orderBy('d.id')
             ->fetchArray();
@@ -26,7 +26,27 @@ class DriveTrackers extends BaseDriveTrackers
         }
         
         return $schema;
+    }
 
+    public static function getNextDriveInt()
+    {
+        $getNext =  Doctrine_Core::getTable('DriveTrackers')->createQuery()        
+                        ->select('MAX(name) AS new_name')
+                        ->fetchArray();
+        $getNextInt = $getNext[0]['new_name']+1;
+    
+        return $getNextInt;
+    }
+
+    public static function getNextDriveName()
+    {
+        $getNext =  Doctrine_Core::getTable('DriveTrackers')->createQuery()        
+                        ->select('MAX(name) AS new_name')
+                        ->fetchArray();
+        $getNextInt = $getNext[0]['new_name']+1;
+        $str = 'X' . sprintf('%05d', $getNextInt);
+    
+        return $str;
     }
 
 }

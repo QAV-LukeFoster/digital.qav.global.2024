@@ -312,7 +312,7 @@ class ticketsActions extends sfActions
     $form->bind($request->getParameter($form->getName()), $request->getFiles($form->getName()));
     if ($form->isValid())
     {
-      if($form->getObject()->isNew()){ $previeous_status = false; }else{ $previeous_status = $form->getObject()->getTicketsStatusId(); }
+      if($form->getObject()->isNew()){ $previeous_status = false; }else{ $previeous_status = $form->getObject()->getTicketsStatusId(); }  // *** THIS IS WHAT I NEED ***
       if($form->getObject()->isNew()){ $previeous_departmnet = false; }else{ $previeous_departmnet = $form->getObject()->getDepartmentsId(); }
     
       $send_to = $this->getSendTo($form);
