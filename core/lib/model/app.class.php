@@ -1280,6 +1280,7 @@ class app
     {
         $core = array(
             'drive_trackers',
+            'drive_types',
             'discussions_reports',
             'discussions_comments',
             'discussions',
@@ -1291,6 +1292,7 @@ class app
             'tickets',
             'tasks_groups',
             'versions',
+            'projects_drive_trackers',
             'projects_phases',
             'projects_reports',
             'projects_comments',

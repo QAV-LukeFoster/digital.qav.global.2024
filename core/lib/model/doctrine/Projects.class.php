@@ -200,12 +200,7 @@ class Projects extends BaseProjects
     }
           
     return $q;  
-  }
-  
-
-  
-
-  
+  }  
   public static function getDefaultFilter($sf_user,$report_type = 'filter')
   {    
     $f = array();

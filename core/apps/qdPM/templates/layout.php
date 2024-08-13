@@ -127,7 +127,7 @@
       
       <!-- BEGIN CONTENT -->
       <div class="page-content-wrapper">
-      		<div class="page-content" style="background-image: url(<?php echo public_path('images/container.png') ?>); background-size:cover; min-height:90vh;">
+      		<div class="page-content" style="background-color::snow; min-height:90vh;">
             <div id="ajax-modal" class="modal fade" tabindex="-1" data-replace="true" data-keyboard="true" data-backdrop="static" data-focus-on=".autofocus" style="background-image: url(<?php echo public_path('images/container.png') ?>); background-size:cover; background-repeat:no-repeat;"></div>
                                  
               <?php if($sf_user->hasFlash('userNotices')) include_partial('global/userNotices', array('userNotices' => $sf_user->getFlash('userNotices'))); ?>
@@ -176,7 +176,17 @@
     App.init();
                 
     qdpm_app_init();   
+
+    
   });         
+</script>
+
+<script>
+	// const element = document.querySelector('#jh');
+	// element.classList.add('animate__animated', 'animate__heartBeat', 'animate__infinite', 'animate__slow');
+
+  // const emoji = document.querySelector('#emoji');
+	// emoji.classList.add('animate__animated', 'animate__headShake', 'animate__infinite');
 </script>
 
 <!-- END JAVASCRIPTS -->    

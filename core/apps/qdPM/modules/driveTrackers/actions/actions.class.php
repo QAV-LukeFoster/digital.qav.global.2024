@@ -20,6 +20,7 @@ class driveTrackersActions extends sfActions
     $table = Doctrine_Core::getTable('DriveTrackers')->createQuery('u');
 
     $this->drives = $table->execute();
+    $this->getNewDriveName = DriveTrackers::getNextDriveName();
 
     app::setPageTitle('Key Safe',$this->getResponse());
   }
@@ -37,12 +38,11 @@ class driveTrackersActions extends sfActions
 
     $this->processForm($request, $this->form);
 
-    $this->setTemplate('new');
+    $this->redirect('driveTrackers/index');
   }
   public function executeEdit(sfWebRequest $request)
   {        
     $this->forward404Unless($drive_trackers = Doctrine_Core::getTable('DriveTrackers')->createQuery()->addWhere('id=?',$request->getParameter('id'))->fetchOne(), sprintf('Object drive does not exist (%s).', $request->getParameter('id')));
-    //$this->checkdrive_trackersAccess('edit',$drive_trackers);
         
     $this->form = new DriveTrackersForm($drive_trackers, array('sf_user'=>$this->getUser()));
   }
@@ -51,7 +51,6 @@ class driveTrackersActions extends sfActions
   {        
     $this->forward404Unless($request->isMethod(sfRequest::POST) || $request->isMethod(sfRequest::PUT));
     $this->forward404Unless($drive_trackers = Doctrine_Core::getTable('DriveTrackers')->createQuery()->addWhere('id=?',$request->getParameter('id'))->fetchOne(), sprintf('Object drive does not exist (%s).', $request->getParameter('id')));
-    //$this->checkdrive_trackersAccess('edit',$drive_trackers);
     
     $this->form = new DriveTrackersForm($drive_trackers, array('sf_user'=>$this->getUser()));
 
@@ -62,10 +61,7 @@ class driveTrackersActions extends sfActions
 
   public function executeDelete(sfWebRequest $request)
   {        
-    //$request->checkCSRFProtection();
-
     $this->forward404Unless($drive_trackers = Doctrine_Core::getTable('DriveTrackers')->find(array($request->getParameter('id'))), sprintf('Object drive does not exist (%s).', $request->getParameter('id')));
-    //$this->checkProjectsAccess('delete',$projects);
           
     $drive_trackers->delete();
 
@@ -82,9 +78,16 @@ class driveTrackersActions extends sfActions
       
       $form->protectFieldsValue();
 
-      $drive_trackers = $form->save();
+      //** Calculate free space at 90% of capacity */
+      $free_space = $form->getValue('capacity');
+      $free_space = $free_space * 0.9;
+
+      $form->setFieldValue('free_space',$free_space);
       
-      $this->redirect('driveTrackers/index');
+      //** Set the next Drive ID int */
+      $form->setFieldValue('name', DriveTrackers::getNextDriveInt());
+
+      $drive_trackers = $form->save();
     }
   }
 }

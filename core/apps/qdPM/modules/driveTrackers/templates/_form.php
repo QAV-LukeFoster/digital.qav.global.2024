@@ -33,53 +33,34 @@
   <div class="modal-body">
     <div class="form-body">
       <?php if (!$form->getObject()->isNew()): ?>
-        <input type="hidden" name="sf_method" value="put" />
+      <input type="hidden" name="sf_method" value="put" />
       <?php endif; ?>
-      <?php echo $form->renderHiddenFields(false) ?>
+      <?php echo $form->renderHiddenFields(true) ?>
       <?php echo $form->renderGlobalErrors() ?>
 
       <div class="container-fluid">
         <div class="row">
           <div class="col-md-6">
-
-            <div class="form-group">
-              <label class="col-md-4 control-label"><span class="required">*</span> <?php echo $form['name']->renderLabel() ?></label>
-              <div class="col-md-8">
-                <?php echo $form['name'] ?>
-              </div>
-            </div>
-
             <div class="form-group">
               <label class="col-md-4 control-label"><?php echo $form['type']->renderLabel() ?></label>
               <div class="col-md-8">
                 <?php echo $form['type'] ?>
               </div>
             </div>
-
             <div class="form-group">
               <label class="col-md-4 control-label"><?php echo $form['capacity']->renderLabel() ?></label>
               <div class="col-md-8">
                 <?php echo $form['capacity'] ?>
               </div>
             </div>
-
-            <div class="form-group">
-              <label class="col-md-4 control-label"><?php echo $form['free_space']->renderLabel() ?></label>
-              <div class="col-md-8">
-                <?php echo $form['free_space'] ?>
-              </div>
-            </div>
-
           </div>
           <div class="col-md-6">
-
             <div class="form-group">
               <label class="col-md-4 control-label"><?php echo $form['encrypt_id']->renderLabel() ?></label>
               <div class="col-md-8">
                 <?php echo $form['encrypt_id'] ?>
               </div>
             </div>
-
             <div class="form-group">
               <label class="col-md-4 control-label"><?php echo $form['encrypt_key']->renderLabel() ?></label>
               <div class="col-md-8">
@@ -91,6 +72,7 @@
         </div>
       </div>
     </div>
+    * <small>Please use the decimal expression when inputting gigabytes: 1 TB = 1000 GB.</small>
   </div>
   <?php echo ajax_modal_template_footer() ?>
 </form>

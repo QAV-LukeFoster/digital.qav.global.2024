@@ -29,7 +29,7 @@
 	<div class="header-inner">
 		<!-- BEGIN LOGO -->
 		<?php             
-		echo '<a class="navbar-brand" href="' . url_for("dashboard/index") . '" style="margin-left:-16px;"> <img src="/images/jh.png" style="max-width:35px;"> P.M ' . sfConfig::get('app_app_name') . '</a>';              
+		echo '<a class="navbar-brand" href="https://reitgames.itch.io/puckit" target="_blank" style="margin-left:-16px;"> <img id="jh" src="/images/jh.png" style="max-width:35px; opacity:1.0; margin-right:10px;"> ' . sfConfig::get('app_app_name') . '</a>';              
 		?>		
 		<!-- END LOGO -->
 		<!-- BEGIN RESPONSIVE MENU TOGGLER -->

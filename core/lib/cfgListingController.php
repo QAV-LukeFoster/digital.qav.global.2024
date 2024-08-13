@@ -75,12 +75,12 @@ class cfgListingController
 	  //$attributes = array('type'=>'image','title'=>__('Edit'),'class'=>'actionIcon iconEdit','src'=>public_path('images/icons/edit.png',true),'onClick'=>'openModalBox(\'' . url_for($this->module . '/edit?id=' . $id . $this->add_url_params('&'),true) . '\')');
     //return $f->render('',__('Edit'),$attributes);
     
-    return '<a href="#" class="btn btn-warning btn-xs" onClick="openModalBox(\'' . url_for($this->module . '/edit?id=' . $id . $this->add_url_params('&'),true) . '\'); return false;"><i class="fa fa-edit" style="margin-left:4px;"></i></a>';
+    return '<a href="#" class="btn btn-warning btn-xs" onClick="openModalBox(\'' . url_for($this->module . '/edit?id=' . $id . $this->add_url_params('&'),true) . '\'); return false;"><i class="fa fa-edit" style="margin-left:1px; margin-top:3px;"></i></a>';
   }
         
   public function delete_button($id)
 	{
-    return link_to('<i class="fa fa-trash-o"></i>', $this->module  . '/delete?id='  . $id  . $this->add_url_params('&'), array('method' => 'delete','class'=>'btn btn-danger btn-xs purple', 'confirm' => __('Are you sure?')));
+    return link_to('<i class="fa fa-trash-o" style="margin-right:1px; margin-top:3px;"></i>', $this->module  . '/delete?id='  . $id  . $this->add_url_params('&'), array('method' => 'delete','class'=>'btn btn-danger btn-xs purple', 'confirm' => __('Are you sure?')));
     
   }
   

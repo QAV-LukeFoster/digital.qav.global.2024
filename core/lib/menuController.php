@@ -338,13 +338,14 @@ class menuController
   
 	public function buildToolsMenu()
 	{
-     return array('title'=>__('Tools'),
+    /* 
+    return array('title'=>__('Tools'),
                   'class'=>'fa-wrench',
                   'url'=>'tools/backup',
                  'submenu'=>array(                    
                     array('title'=>__('Backups'),'url'=>'tools/backup'),                       
                     array('title'=>__('Import Tasks from XLS file'),'url'=>'tools/xlsTasksImport'),                                                                                     
-                   ));
+                   )); */
   }
   
   public function buildUpgradeToExtendedMenu()
@@ -418,7 +419,7 @@ class menuController
     if($this->sf_user->hasCredential('allow_manage_configuration'))
     {
       $m[] = $this->buildConfigurationMenu();
-      $m[] = $this->buildToolsMenu();
+      // $m[] = $this->buildToolsMenu();
       // $m[] = $this->buildUpgradeToExtendedMenu();
     }
 

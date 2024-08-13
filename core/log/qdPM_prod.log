@@ -1,92 +1,43 @@
-Jul 05 10:25:51 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/bg.png" (/).
-Jul 05 10:26:03 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/bg.png" (/).
-Jul 11 07:34:49 symfony [err] {sfError404Exception} Action "/index" does not exist.
-Jul 12 05:22:53 symfony [crit] {sfRenderException} The template "_styles.php" does not exist or is unreadable in "".
-Jul 12 05:40:26 symfony [err] {sfError404Exception} Action "z800/index" does not exist.
-Jul 12 05:40:47 symfony [err] {sfError404Exception} Action "z800/index" does not exist.
-Jul 12 06:09:20 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/images/container.png" (/).
-Jul 12 06:27:06 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/images/bg.png)" (/).
-Jul 12 06:27:27 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/images/qav.png)" (/).
-Jul 12 06:27:29 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/images/qav.png)" (/).
-Jul 12 06:27:36 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/images/qav.png)" (/).
-Jul 12 06:28:45 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/images/qav.png)" (/).
-Jul 12 07:43:28 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/images/bg.png" (/).
-Jul 12 07:43:46 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/images/friday.png" (/).
-Jul 15 06:38:38 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/css/main.css" (/).
-Jul 15 07:26:59 symfony [crit] {sfException} Route "selfdistruct" is not defined.
-Jul 15 07:57:13 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/images/gantt.png%20style=" (/).
-Jul 15 07:57:19 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/images/gantt.png%20style=" (/).
-Jul 16 05:02:32 symfony [crit] {Doctrine_Table_Exception} Unknown method DriveTrackerTable::orderBy
-Jul 16 05:14:47 symfony [crit] {sfException} Call to undefined method bitlockerActions::getDoctrine.
-Jul 16 05:18:18 symfony [crit] {sfException} Call to undefined method bitlockerActions::doctrine.
-Jul 16 05:18:19 symfony [crit] {sfException} Call to undefined method bitlockerActions::doctrine.
-Jul 16 05:18:19 symfony [crit] {sfException} Call to undefined method bitlockerActions::doctrine.
-Jul 16 05:18:20 symfony [crit] {sfException} Call to undefined method bitlockerActions::doctrine.
-Jul 16 06:04:47 symfony [crit] {sfException} Call to undefined method bitlockerActions::getDriveTracker.
-Jul 16 06:20:07 symfony [crit] {sfException} Call to undefined method bitlockerActions::getDoctrine.
-Jul 16 06:21:35 symfony [crit] {sfException} Call to undefined method bitlockerActions::doctrine.
-Jul 16 06:28:53 symfony [crit] {Doctrine_Table_Exception} Unknown method DriveTrackerTable::getColumnsNames
-Jul 16 06:32:52 symfony [crit] {Doctrine_Table_Exception} Unknown method DriveTrackerTable::get
-Jul 16 06:33:12 symfony [crit] {Doctrine_Table_Exception} Unknown method DriveTrackerTable::all
-Jul 16 06:42:16 symfony [crit] {Doctrine_Exception} Couldn't find class drive_trackers
-Jul 16 06:49:13 symfony [crit] {Doctrine_Table_Exception} Unknown method DriveTrackerTable::getSchema
-Jul 16 08:18:32 symfony [crit] {Doctrine_Exception} Couldn't find class User
-Jul 16 10:43:57 symfony [crit] {Doctrine_Record_UnknownPropertyException} Unknown method DriveTracker::associations
-Jul 16 11:10:28 symfony [err] {sfError404Exception} Action "bitlocker/new" does not exist.
-Jul 16 11:28:21 symfony [crit] {sfRenderException} The template "newSuccess.php" does not exist or is unreadable in "".
-Jul 16 11:30:55 symfony [crit] {sfRenderException} The template "newSuccess.php" does not exist or is unreadable in "".
-Jul 16 11:40:35 symfony [crit] {sfRenderException} The template "newSuccess.php" does not exist or is unreadable in "".
-Jul 16 11:40:52 symfony [crit] {sfRenderException} The template "newSuccess.php" does not exist or is unreadable in "".
-Jul 16 11:42:12 symfony [crit] {sfRenderException} The template "newSuccess.php" does not exist or is unreadable in "".
-Jul 16 11:43:14 symfony [crit] {sfRenderException} The template "newSuccess.php" does not exist or is unreadable in "".
-Jul 17 04:20:24 symfony [crit] {sfRenderException} The template "newSuccess.php" does not exist or is unreadable in "".
-Jul 17 06:38:27 symfony [crit] {sfRenderException} The template "newSuccess.php" does not exist or is unreadable in "".
-Jul 17 06:40:59 symfony [crit] {sfRenderException} The template "newSuccess.php" does not exist or is unreadable in "".
-Jul 17 06:41:07 symfony [crit] {sfRenderException} The template "newSuccess.php" does not exist or is unreadable in "".
-Jul 17 06:55:39 symfony [crit] {sfRenderException} The template "_form.php" does not exist or is unreadable in "".
-Jul 17 08:54:40 symfony [crit] {InvalidArgumentException} Widget "active" does not exist.
-Jul 17 09:00:40 symfony [crit] {InvalidArgumentException} Widget "notify" does not exist.
-Jul 17 11:20:04 symfony [crit] {InvalidArgumentException} Widget "notify" does not exist.
-Jul 17 11:25:16 symfony [crit] {InvalidArgumentException} Widget "notify" does not exist.
-Jul 17 11:52:37 symfony [crit] {sfException} Call to undefined method bitlockerActions::processForm.
-Jul 18 04:22:44 symfony [crit] {sfException} Call to undefined method bitlockerActions::processForm.
-Jul 22 04:52:16 symfony [crit] {Doctrine_Record_UnknownPropertyException} Unknown record property / related component "id" on "Events"
-Jul 22 05:00:59 symfony [crit] {sfException} Call to undefined method bitlockerActions::getSendTo.
-Jul 22 05:18:40 symfony [crit] {sfValidatorErrorSchema} Unexpected extra form field named "id". Unexpected extra form field named "type". Unexpected extra form field named "capacity". Unexpected extra form field named "free_space". Unexpected extra form field named "encrypt_id". Unexpected extra form field named "encrypt_key". event_name [Required.] details [Required.]
-Jul 22 05:45:44 symfony [err] {sfError404Exception} Action "bitlocker/index" does not exist.
-Jul 22 06:04:07 symfony [crit] {InvalidArgumentException} Widget "name" does not exist.
-Jul 22 06:28:03 symfony [crit] {InvalidArgumentException} Widget "drive_tracker_name" does not exist.
-Jul 22 07:19:59 symfony [err] {sfError404Exception} Action "driveTrackers/create" does not exist.
-Jul 22 07:20:27 symfony [err] {sfError404Exception} Action "driveTrackers/create" does not exist.
-Jul 22 07:21:14 symfony [err] {sfError404Exception} Action "driveTracker/update" does not exist.
-Jul 22 07:30:20 symfony [crit] {Doctrine_Connection_Mysql_Exception} SQLSTATE[22001]: String data, right truncated: 1406 Data too long for column 'name' at row 1
-Jul 22 07:37:43 symfony [crit] {sfRenderException} The template "createSuccess.php" does not exist or is unreadable in "".
-Jul 22 07:44:40 symfony [err] {sfError404Exception} Action "driveTrackers/create" does not exist.
-Jul 22 07:50:47 symfony [err] {sfError404Exception} Action "driveTracker/index" does not exist.
-Jul 22 07:50:51 symfony [err] {sfError404Exception} Action "driveTracker/index" does not exist.
-Jul 22 07:50:54 symfony [crit] {Doctrine_Exception} Couldn't find class DriveTracker
-Jul 22 08:53:37 symfony [err] {sfError404Exception} Action "driveTracker/index" does not exist.
-Jul 22 09:12:01 symfony [err] {sfError404Exception} Action "driveTrackers/edit" does not exist.
-Jul 22 09:24:49 symfony [err] {sfError404Exception} Action "driveTrackers/edit" does not exist.
-Jul 22 09:25:56 symfony [err] {sfError404Exception} Action "driveTrackers/edit" does not exist.
-Jul 22 09:26:36 symfony [err] {sfError404Exception} Action "driveTrackers/edit" does not exist.
-Jul 22 09:26:49 symfony [err] {sfError404Exception} Action "driveTrackers/edit" does not exist.
-Jul 22 09:33:28 symfony [crit] {Doctrine_Exception} Couldn't find class DriveTracker
-Jul 22 09:36:47 symfony [crit] {Doctrine_Exception} Couldn't find class DriveTracker
-Jul 22 09:37:49 symfony [err] {sfError404Exception} Object drive does not exist ().
-Jul 22 09:39:13 symfony [crit] {sfException} Call to undefined method driveTrackersActions::checkdrive_trackersAccess.
-Jul 22 09:40:15 symfony [crit] {sfRenderException} The template "editSuccess.php" does not exist or is unreadable in "".
-Jul 22 10:06:34 symfony [crit] {sfRenderException} The template "editSuccess.php" does not exist or is unreadable in "".
-Jul 22 10:08:27 symfony [crit] {Doctrine_Exception} Couldn't find class drive_trackers
-Jul 22 10:14:03 symfony [crit] {Doctrine_Connection_Mysql_Exception} SQLSTATE[01000]: Warning: 1265 Data truncated for column 'capacity' at row 1
-Jul 22 10:18:08 symfony [err] {sfError404Exception} Action "driveTrackers/delete" does not exist.
-Jul 23 13:46:18 symfony [crit] {Doctrine_Connection_Mysql_Exception} SQLSTATE[42S02]: Base table or view not found: 1146 Table 'qdpm_z800.drive_trackers' doesn't exist. Failing Query: "SELECT `d`.`id` AS `d__id`, `d`.`name` AS `d__name`, `d`.`type` AS `d__type`, `d`.`encrypt_id` AS `d__encrypt_id`, `d`.`encrypt_key` AS `d__encrypt_key`, `d`.`associations` AS `d__associations`, `d`.`legacy` AS `d__legacy`, `d`.`legacy_info` AS `d__legacy_info`, `d`.`capacity` AS `d__capacity`, `d`.`free_space` AS `d__free_space`, `d`.`record_disabled` AS `d__record_disabled`, `d`.`year` AS `d__year` FROM `drive_trackers` `d`"
-Jul 23 13:46:38 symfony [crit] {Doctrine_Connection_Mysql_Exception} SQLSTATE[42S02]: Base table or view not found: 1146 Table 'qdpm_z800.drive_trackers' doesn't exist. Failing Query: "SELECT `d`.`id` AS `d__id`, `d`.`name` AS `d__name`, `d`.`type` AS `d__type`, `d`.`encrypt_id` AS `d__encrypt_id`, `d`.`encrypt_key` AS `d__encrypt_key`, `d`.`associations` AS `d__associations`, `d`.`legacy` AS `d__legacy`, `d`.`legacy_info` AS `d__legacy_info`, `d`.`capacity` AS `d__capacity`, `d`.`free_space` AS `d__free_space`, `d`.`record_disabled` AS `d__record_disabled`, `d`.`year` AS `d__year` FROM `drive_trackers` `d`"
-Jul 23 13:46:43 symfony [crit] {Doctrine_Connection_Mysql_Exception} SQLSTATE[42S02]: Base table or view not found: 1146 Table 'qdpm_z800.drive_trackers' doesn't exist. Failing Query: "SELECT `d`.`id` AS `d__id`, `d`.`name` AS `d__name`, `d`.`type` AS `d__type`, `d`.`encrypt_id` AS `d__encrypt_id`, `d`.`encrypt_key` AS `d__encrypt_key`, `d`.`associations` AS `d__associations`, `d`.`legacy` AS `d__legacy`, `d`.`legacy_info` AS `d__legacy_info`, `d`.`capacity` AS `d__capacity`, `d`.`free_space` AS `d__free_space`, `d`.`record_disabled` AS `d__record_disabled`, `d`.`year` AS `d__year` FROM `drive_trackers` `d`"
-Jul 23 15:05:25 symfony [crit] {Doctrine_Connection_Mysql_Exception} SQLSTATE[42S02]: Base table or view not found: 1146 Table 'qdpm_z800.drive_trackers' doesn't exist. Failing Query: "SELECT `d`.`id` AS `d__id`, `d`.`name` AS `d__name`, `d`.`type` AS `d__type`, `d`.`encrypt_id` AS `d__encrypt_id`, `d`.`encrypt_key` AS `d__encrypt_key`, `d`.`associations` AS `d__associations`, `d`.`legacy` AS `d__legacy`, `d`.`legacy_info` AS `d__legacy_info`, `d`.`capacity` AS `d__capacity`, `d`.`free_space` AS `d__free_space`, `d`.`record_disabled` AS `d__record_disabled`, `d`.`year` AS `d__year` FROM `drive_trackers` `d`"
-Jul 24 11:13:42 symfony [crit] {Doctrine_Connection_Mysql_Exception} SQLSTATE[42S02]: Base table or view not found: 1146 Table 'qdpm_z800.drive_trackers' doesn't exist. Failing Query: "SELECT `d`.`id` AS `d__id`, `d`.`name` AS `d__name`, `d`.`type` AS `d__type`, `d`.`encrypt_id` AS `d__encrypt_id`, `d`.`encrypt_key` AS `d__encrypt_key`, `d`.`associations` AS `d__associations`, `d`.`legacy` AS `d__legacy`, `d`.`legacy_info` AS `d__legacy_info`, `d`.`capacity` AS `d__capacity`, `d`.`free_space` AS `d__free_space`, `d`.`record_disabled` AS `d__record_disabled`, `d`.`year` AS `d__year` FROM `drive_trackers` `d`"
-Jul 30 09:08:18 symfony [crit] {Doctrine_Connection_Mysql_Exception} SQLSTATE[42S02]: Base table or view not found: 1146 Table 'qdpm_z800.drive_trackers' doesn't exist. Failing Query: "SELECT `d`.`id` AS `d__id`, `d`.`name` AS `d__name`, `d`.`type` AS `d__type`, `d`.`encrypt_id` AS `d__encrypt_id`, `d`.`encrypt_key` AS `d__encrypt_key`, `d`.`associations` AS `d__associations`, `d`.`legacy` AS `d__legacy`, `d`.`legacy_info` AS `d__legacy_info`, `d`.`capacity` AS `d__capacity`, `d`.`free_space` AS `d__free_space`, `d`.`record_disabled` AS `d__record_disabled`, `d`.`year` AS `d__year` FROM `drive_trackers` `d`"
-Jul 30 09:59:44 symfony [crit] {sfRenderException} The template "_styles.php" does not exist or is unreadable in "".
-Jul 31 09:00:19 symfony [err] {sfError404Exception} Action "sf_sandbox/web" does not exist.
-Jul 31 10:26:46 symfony [crit] {Doctrine_Connection_Mysql_Exception} SQLSTATE[42S02]: Base table or view not found: 1146 Table 'qdpm_z800.drive_trackers' doesn't exist. Failing Query: "SELECT `d`.`id` AS `d__id`, `d`.`name` AS `d__name`, `d`.`type` AS `d__type`, `d`.`encrypt_id` AS `d__encrypt_id`, `d`.`encrypt_key` AS `d__encrypt_key`, `d`.`associations` AS `d__associations`, `d`.`legacy` AS `d__legacy`, `d`.`legacy_info` AS `d__legacy_info`, `d`.`capacity` AS `d__capacity`, `d`.`free_space` AS `d__free_space`, `d`.`record_disabled` AS `d__record_disabled`, `d`.`year` AS `d__year` FROM `drive_trackers` `d`"
-Aug 01 15:45:01 symfony [err] {sfError404Exception} Action "loko/index" does not exist.
+Aug 06 14:39:21 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/images/logo-light.svg" (/).
+Aug 06 14:39:40 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/images/logo-light.svg" (/).
+Aug 06 14:43:14 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/images/logo-light.svg" (/).
+Aug 06 14:43:14 symfony [err] {sfError404Exception} Action "template/css" does not exist.
+Aug 06 14:43:14 symfony [err] {sfError404Exception} Action "template/css" does not exist.
+Aug 06 14:43:46 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/images/logo-light.svg" (/).
+Aug 06 14:43:46 symfony [err] {sfError404Exception} Action "template/css" does not exist.
+Aug 06 14:43:46 symfony [err] {sfError404Exception} Action "template/css" does not exist.
+Aug 06 14:44:25 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/images/qav.png" (/).
+Aug 06 14:44:25 symfony [err] {sfError404Exception} Action "template/css" does not exist.
+Aug 06 14:44:25 symfony [err] {sfError404Exception} Action "template/css" does not exist.
+Aug 06 14:44:46 symfony [err] {sfError404Exception} Action "template/css" does not exist.
+Aug 06 14:44:46 symfony [err] {sfError404Exception} Action "template/css" does not exist.
+Aug 06 14:45:30 symfony [err] {sfError404Exception} Action "template/css" does not exist.
+Aug 06 14:45:30 symfony [err] {sfError404Exception} Action "template/css" does not exist.
+Aug 06 14:45:43 symfony [err] {sfError404Exception} Action "template/css" does not exist.
+Aug 06 14:46:02 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/images/bg.jpg" (/).
+Aug 12 10:29:39 symfony [crit] {InvalidArgumentException} Widget "capacity (GB)" does not exist.
+Aug 12 10:29:56 symfony [crit] {InvalidArgumentException} Widget "capacity (GB)" does not exist.
+Aug 12 11:17:52 symfony [crit] {sfException} Call to undefined method DriveTrackersForm::getFieldValue.
+Aug 12 11:23:42 symfony [crit] {sfRenderException} The template "createSuccess.php" does not exist or is unreadable in "".
+Aug 12 11:26:23 symfony [crit] {sfRenderException} The template "createSuccess.php" does not exist or is unreadable in "".
+Aug 12 11:29:21 symfony [crit] {sfRenderException} The template "createSuccess.php" does not exist or is unreadable in "".
+Aug 12 11:29:47 symfony [crit] {sfRenderException} The template "createSuccess.php" does not exist or is unreadable in "".
+Aug 12 11:34:20 symfony [crit] {sfRenderException} The template "createSuccess.php" does not exist or is unreadable in "".
+Aug 12 11:34:49 symfony [crit] {sfException} Call to undefined method DriveTrackersForm::getParameter.
+Aug 12 11:35:21 symfony [crit] {sfRenderException} The template "createSuccess.php" does not exist or is unreadable in "".
+Aug 12 11:46:50 symfony [crit] {sfRenderException} The template "createSuccess.php" does not exist or is unreadable in "".
+Aug 12 11:53:00 symfony [crit] {sfRenderException} The template "deleteSuccess.php" does not exist or is unreadable in "".
+Aug 12 11:53:21 symfony [err] {sfError404Exception} Object drive does not exist (1).
+Aug 12 13:39:55 symfony [crit] {RuntimeException} sfWidgetFormChoice requires the following options: 'choices'.
+Aug 12 14:18:47 symfony [crit] {sfRenderException} The template "createSuccess.php" does not exist or is unreadable in "".
+Aug 12 14:20:22 symfony [crit] {sfRenderException} The template "createSuccess.php" does not exist or is unreadable in "".
+Aug 12 14:59:45 symfony [crit] {Doctrine_Connection_Mysql_Exception} SQLSTATE[42S22]: Column not found: 1054 Unknown column 'd.s' in 'field list'. Failing Query: "SELECT `d`.`id` AS `d__id`, `d`.`s` AS `d__s`, CAST(`d`.`name` AS SIGNED) AS `d__0` FROM `drive_trackers` `d`"
+Aug 12 15:01:58 symfony [crit] {Doctrine_Exception} Couldn't find class s
+Aug 12 15:02:07 symfony [crit] {Doctrine_Exception} Couldn't find class s
+Aug 12 15:02:50 symfony [crit] {Doctrine_Exception} Couldn't find class s
+Aug 12 15:03:00 symfony [crit] {Doctrine_Connection_Mysql_Exception} SQLSTATE[42S22]: Column not found: 1054 Unknown column 'd.u' in 'field list'. Failing Query: "SELECT `d`.`id` AS `d__id`, `d`.`u` AS `d__u`, CAST(`d`.`name` AS SIGNED) AS `d__0` FROM `drive_trackers` `d`"
+Aug 13 11:08:33 symfony [crit] {Doctrine_Connection_Mysql_Exception} SQLSTATE[42S22]: Column not found: 1054 Unknown column 'd.s' in 'field list'. Failing Query: "SELECT `d`.`id` AS `d__id`, `d`.`s` AS `d__s`, MAX(`d`.`name`) AS `d__0` FROM `drive_trackers` `d`"
+Aug 13 11:08:57 symfony [crit] {Doctrine_Exception} Couldn't find class s
+Aug 13 11:09:22 symfony [crit] {Doctrine_Exception} Couldn't find class s
+Aug 13 11:09:24 symfony [crit] {Doctrine_Exception} Couldn't find class s
+Aug 13 11:09:33 symfony [crit] {Doctrine_Exception} Couldn't find class s

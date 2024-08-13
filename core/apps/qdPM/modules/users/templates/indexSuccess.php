@@ -44,7 +44,7 @@ $extra_fields = ExtraFieldsList::getFieldsByType('users',$sf_user,true);
 <?php include_partial('app/searchResult') ?>
 
 <div <?php echo  (count($userss)==0 ? 'class="table-scrollable"':'')?> >
-<table class="table table-striped table-hover" id="table-users">
+<table class="table" id="table-users">
   <thead>
     <tr>  
       <th data-bSortable="false" style="width: 20px;"><input class="group-checkable" data-set="#table-users .checkboxes"  type="checkbox"></th>  
@@ -61,6 +61,7 @@ $extra_fields = ExtraFieldsList::getFieldsByType('users',$sf_user,true);
   </thead>
   <tbody>
     <?php foreach ($userss as $users): ?>
+      
     <tr>
       <td><input name="multiple_selected[]" id="multiple_selected_<?php echo $users->getId() ?>" type="checkbox" value="<?php echo $users->getId() ?>" class="checkboxes"</td>
       <td><?php echo ($sf_user->getAttribute('id')!= $users->getId() ? $lc->delete_button($users->getId()) . ' ':'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;') . $lc->edit_button($users->getId()) ?></td>

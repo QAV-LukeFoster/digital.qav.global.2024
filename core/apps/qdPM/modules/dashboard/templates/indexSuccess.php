@@ -30,7 +30,7 @@
         if($sf_user->getAttribute('id') == 13){ 
           echo "You're " . " &#128169; " . strtok($sf_user->getAttribute('user')->getName(), ' ');
         }else{
-          echo "A very warm welcome to you " . strtok($sf_user->getAttribute('user')->getName(), ' ') . " <span style='font-size:28px;'>&#128512;</span>";
+          echo "<div class='row'><div class='col-sm-7'>A very warm welcome to you " . strtok($sf_user->getAttribute('user')->getName(), ' ') . "</div> <!--<div class='col-sm-5' id='emoji' style='font-size:28px;'>&#128512;</div>--></div>";
         }
       ?> 
     </h3> 

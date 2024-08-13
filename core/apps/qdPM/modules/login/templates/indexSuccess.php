@@ -25,54 +25,42 @@
 
 <?php $form->setDefault('email',base64_decode($sf_request->getCookie('remember_user'))) ?>
 
-<form class="login-form" name="loginForm" id="loginForm" action="<?php echo url_for('login/index',true) ?>" method="POST" style="margin-bottom:-15px;">
+<form class="login-form" name="loginForm" id="loginForm" action="<?php echo url_for('login/index',true) ?>" method="POST" style="margin-bottom:0px;">
 
 <?php echo $form->renderHiddenFields(false) ?>
 <?php echo $form->renderGlobalErrors() ?>
 
-<div align="center" style="margin-top:-10px; margin-bottom:15px;">
-  
-  <img class="animate__pulse" src="/images/qav.png" style="min-width:300px; margin-top:30px; margin-bottom:20px;">
-    <br>
-    <small style="font-size:9px; color:slategrey;">
-      <div wrapper id="quote-box" align="center" style="max-width:170px; color:#7d7d7d;">
-          <div id="text"></div><br><!--<div id="author" style="font-weight: bold;"></div>-->
-      </div>
-    </small>
-</div>
 
-<div><?php if(strlen($c = strip_tags(sfConfig::get('app_login_page_content')))>0) echo '<p>' . nl2br($c) . '</p>' ?></div>
+<div><?php // if(strlen($c = strip_tags(sfConfig::get('app_login_page_content')))>0) echo '<p>' . nl2br($c) . '</p>' ?></div>
 
-<?php if($sf_user->hasFlash('userNotices')) include_partial('global/userNotices', array('userNotices' => $sf_user->getFlash('userNotices'))); ?>
+<?php // if($sf_user->hasFlash('userNotices')) include_partial('global/userNotices', array('userNotices' => $sf_user->getFlash('userNotices'))); ?>
 
-<div class="form-group">
+<div class="form-group" style="padding-top:8px;">
   <!--ie8, ie9 does not support html5 placeholder, so we just show field title for that-->
-  <label class="control-label visible-ie8 visible-ie9"><?php echo $form['email']->renderLabelName() ?></label>
+  <!--<label class="control-label visible-ie8 visible-ie9"><?php // echo $form['email']->renderLabelName() ?></label>-->
   <div class="input-icon">
-  	<i class="fa fa-envelope"></i>
-  	<input class="form-control placeholder-no-fix required email" type="text" autocomplete="off" placeholder="<?php echo $form['email']->renderLabelName() ?>" name="login[email]"/>
+  	<input class="form-control placeholder-no-fix required email" type="text" autocomplete="off" placeholder="Username" name="login[email]" style="box-shadow: 2px 3px #7d7d7d;"/>
   </div>
 </div>
 
 <div class="form-group">
-	<label class="control-label visible-ie8 visible-ie9"><?php echo $form['password']->renderLabelName() ?></label>
+	<!--<label class="control-label visible-ie8 visible-ie9"><?php // echo $form['password']->renderLabelName() ?></label>-->
 	<div class="input-icon">
-		<i class="fa fa-lock"></i>
-		<input class="form-control placeholder-no-fix required" type="password" autocomplete="off" placeholder="<?php echo $form['password']->renderLabelName() ?>" name="login[password]"/>
+		<input class="form-control placeholder-no-fix required" type="password" autocomplete="off" placeholder="<?php echo $form['password']->renderLabelName() ?>" name="login[password]" style="box-shadow: 2px 3px #7d7d7d;"/>
 	</div>
 </div>
 
-<div style="margin-bottom:-50px;">
-  <div class="form-actions">
-      <!--<label class="checkbox"> <?php echo input_checkbox_tag('remember_me',1,array('checked'=>$sf_request->getCookie('remember_me')))  . __('Remember Me') ?></label>-->
 
-      <label class="checkbox"><?php echo link_to(__('Password forgotten?'),'login/restorePassword'); ?></label>
+  <div class="form-group">
+      <!--<label class="checkbox"> <?php // echo input_checkbox_tag('remember_me',1,array('checked'=>$sf_request->getCookie('remember_me')))  . __('Remember Me') ?></label>-->
+
+      <!--<label class="checkbox"><?php // echo link_to(__('Password forgotten?'),'login/restorePassword'); ?></label>-->
         
-      <button type="submit" class="btn btn-success pull-right" style=""><?php echo __('Login') ?> </button>
+      <button type="submit" class="btn btn-success pull-right" style="text-shadow: 1px 1px #899bcf;"> <?php echo __('Login') ?> </button>
   </div>
 
-  <div class="forget-password"></div>
-</div>
+  <!--<div class="forget-password"></div>-->
+
 
   <?php
   $http_referer = '';

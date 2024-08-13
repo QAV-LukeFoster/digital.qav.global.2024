@@ -6,7 +6,7 @@ https://www.design-seeds.com/seasons/winter/winter-tones-4/
 #484251 a:hover
 #484251 header menu
 #5F7390 left menu
-#A0C1D4 menu separator & submenu hover
+#5cb85c menu separator & submenu hover
 #DADCA7 btn-primary
 
 
@@ -21,7 +21,7 @@ Reset and overrides
 
 body {
   color: #222222;
-  background-color: #5F7390 !important;
+  background-color: #7c8184 !important;
 }
 .btn-primary {  
   background-color: #5F7390;
@@ -44,7 +44,7 @@ Page header
 .header {
   filter: none;
   background-image: none;
-  background-color: #484251;
+  background-color: #5cb85c;
   border-bottom: 1px solid #5F7390;
   -webkit-box-shadow: 0px 4px 12px 0px rgba(50, 50, 50, 0.75);
   -moz-box-shadow: 0px 4px 12px 0px rgba(50, 50, 50, 0.75);
@@ -52,7 +52,7 @@ Page header
 }
 .header .navbar-nav .dropdown-toggle:hover,
 .header .navbar-nav .dropdown.open .dropdown-toggle {
-  background-color: #A0C1D4 !important;
+  background-color: #5cb85c !important;
   color: #484251;
 }
 .header .navbar-nav li.dropdown .dropdown-toggle i {
@@ -78,11 +78,11 @@ Page header
 Page sidebar
 ***/
 .page-sidebar {
-  background: #5F7390;
+  background: #7c8184;
 }
 ul.page-sidebar-menu > li > a {
-  border-top: 1px solid #A0C1D4;
-  border-bottom: 1px solid #484251;
+  border-top: 1px solid #5cb85c;
+  border-bottom: 1px solid #7c8184;
   color: #ffffff;
 }
 ul.page-sidebar-menu > li:last-child > a {
@@ -94,13 +94,13 @@ ul.page-sidebar-menu > li a i {
 ul.page-sidebar-menu > li.open > a,
 ul.page-sidebar-menu > li > a:hover,
 ul.page-sidebar-menu > li:hover > a {
-  background: #484251;
+  background: #7c8184;
 }
 ul.page-sidebar-menu > li.active > a {
   color: #ffffff;
-  background: #484251 !important;
-  border-top: 1px solid #484251 !important;
-  border-bottom: 1px solid #484251 !important;
+  background: #5cb85c !important;
+  border-top: 1px solid #7c8184 !important;
+  border-bottom: 1px solid #7c8184 !important;
 }
 ul.page-sidebar-menu > li.active > a i {
   color: #ffffff;
@@ -110,14 +110,14 @@ ul.page-sidebar-menu > li > ul.sub-menu > li:first-child > a {
 }
 ul.page-sidebar-menu > li > ul.sub-menu > li.active > a,
 ul.page-sidebar-menu > li > ul.sub-menu > li > a:hover {
-  color: #484251 !important;
-  background: #A0C1D4 !important;
+  color: #fff !important;
+  background: #5cb85c !important;
 }
 ul.page-sidebar-menu > li > ul.sub-menu > li > a:hover {
-  background: #A0C1D4 !important;
+  background: #5cb85c !important;
 }
 .page-sidebar-menu > li.active {
-    border-right: 4px solid #5F7390;
+    border-right: 0px solid #7c8184;
 }
 
 /* 3rd level sub menu */
@@ -125,7 +125,7 @@ ul.page-sidebar-menu > li > ul.sub-menu li > ul.sub-menu > li.active > a,
 ul.page-sidebar-menu > li > ul.sub-menu li > ul.sub-menu > li > a:hover,
 ul.page-sidebar-menu > li > ul.sub-menu li.open > a {
   color: #ffffff !important;
-  background: #A0C1D4 !important;
+  background: #5cb85c !important;
 }
 /* font color for all sub menu links*/
 ul.page-sidebar-menu li > ul.sub-menu > li > a {
@@ -158,7 +158,7 @@ Footer
   color: #ffffff;
 }
 .footer .footer-tools .go-top {
-  background-color: #484251;
+  background-color: #5cb85c;
 }
 .footer .footer-tools .go-top:hover {
   opacity: 0.7;
@@ -246,7 +246,7 @@ Landscape phone to portrait tablet
 }
 @media (max-width: 480px) {
   .header .navbar-nav > li.devider {
-    border-left: 1px solid #A0C1D4 !important;
+    border-left: 1px solid #5cb85c !important;
   }
 }
 

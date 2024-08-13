@@ -1,4 +1,4 @@
-<?php
+<hgroup?php
 /**
 *qdPM
 *
@@ -24,6 +24,10 @@
 ?>
 <!-- BEGIN SIDEBAR -->
 
+<style>
+
+</style>
+
 <div class="page-sidebar-wrapper">
 	<div class="page-sidebar-wrapper">
 		<div class="page-sidebar navbar-collapse collapse"> 
@@ -42,8 +46,10 @@
 					<!-- BEGIN SIDEBAR TOGGLER BUTTON -->
 					<div class="sidebar-toggler">
 					</div>
+					
 					<div class="clearfix">
 					</div>
+					
 					<!-- BEGIN SIDEBAR TOGGLER BUTTON -->
 				</li>
 				
@@ -51,6 +57,10 @@
            
 			</ul>
 			<!-- END SIDEBAR MENU -->
+			<div class="container" style="padding:12px; margin-top:300px;" class="animate__heartBeat animate__infinite animate__slower">
+				<!--<img id="jh" src="/images/jh.png" style="max-width:100px; margin-left:40px; opacity:0.15;">-->
+			</div>
+			
 		</div>
 	</div>
 </div>

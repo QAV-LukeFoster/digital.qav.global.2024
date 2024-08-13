@@ -10,6 +10,7 @@ Doctrine_Manager::getInstance()->bindComponent('Projects', 'doctrine');
  * @property integer $id
  * @property integer $projects_status_id
  * @property integer $projects_types_id
+ * @property integer $projects_drive_trackers_id
  * @property integer $created_by
  * @property string $name
  * @property string $description
@@ -30,6 +31,7 @@ Doctrine_Manager::getInstance()->bindComponent('Projects', 'doctrine');
  * @method integer             getId()                 Returns the current record's "id" value
  * @method integer             getProjectsStatusId()   Returns the current record's "projects_status_id" value
  * @method integer             getProjectsTypesId()    Returns the current record's "projects_types_id" value
+ * @method integer             getProjectsDriveTrackersId()    Returns the current record's "projects_drive_trackers_id" value
  * @method integer             getCreatedBy()          Returns the current record's "created_by" value
  * @method string              getName()               Returns the current record's "name" value
  * @method string              getDescription()        Returns the current record's "description" value
@@ -102,6 +104,15 @@ abstract class BaseProjects extends sfDoctrineRecord
              'autoincrement' => false,
              'length' => 4,
              ));
+        $this->hasColumn('projects_drive_trackers_id', 'integer', 4, array(
+               'type' => 'integer',
+               'fixed' => 0,
+               'unsigned' => false,
+               'primary' => false,
+               'notnull' => false,
+               'autoincrement' => false,
+               'length' => 4,
+               ));
         $this->hasColumn('created_by', 'integer', 4, array(
              'type' => 'integer',
              'fixed' => 0,
@@ -169,6 +180,10 @@ abstract class BaseProjects extends sfDoctrineRecord
         $this->hasOne('ProjectsTypes', array(
              'local' => 'projects_types_id',
              'foreign' => 'id'));
+
+        $this->hasOne('DriveTracker', array(
+               'local' => 'projects_drive_trackers_id',
+               'foreign' => 'id'));
 
         $this->hasOne('Users', array(
              'local' => 'created_by',

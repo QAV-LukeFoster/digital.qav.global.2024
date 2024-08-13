@@ -36,19 +36,15 @@ class DriveTrackersForm extends BaseDriveTrackersForm
 {
   public function configure()
   {
-    $this->widgetSchema['name'] = new sfWidgetFormInput();
-    $this->widgetSchema['type'] = new sfWidgetFormInput();
+    $this->widgetSchema['type'] = new sfWidgetFormChoice(array('choices' => array('eSATA' => 'eSATA','IDE' => 'IDE','NvM' => 'NvM','OTHER' => 'OTHER','SATA' => 'SATA','SCSI' => 'SCSI','SSD' => 'SSD','USB.1' => 'USB.1','USB.2' => 'USB.2','USB.3' => 'USB.3')));
     $this->widgetSchema['capacity'] = new sfWidgetFormInput();
-    $this->widgetSchema['free_space'] = new sfWidgetFormInput();
     $this->widgetSchema['encrypt_id'] = new sfWidgetFormInput();
     $this->widgetSchema['encrypt_key'] = new sfWidgetFormInput();
 
-    //$this->widgetSchema['id'] = new sfWidgetFormInputHidden();
+    $this->widgetSchema['id'] = new sfWidgetFormInputHidden();
                 
-    $this->widgetSchema->setLabels(array('name'=>'Drive ID',
-                                         'type'=>'Media Type',
-                                         'capacity'=>'Total Capcity',
-                                         'free_space'=>'Free Capcity',
+    $this->widgetSchema->setLabels(array('type'=>'Media Type',
+                                         'capacity'=>'Total Capcity (GB*)',
                                          'encrypt_id'=>'Encryption ID',
                                          'encrypt_key'=>'Encryption Key',
                                         ));
