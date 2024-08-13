@@ -217,6 +217,14 @@ class projectsActions extends sfActions
 
   protected function processForm(sfWebRequest $request, sfForm $form)
   {    
+    
+    /** 
+     * Need to manually add in a SELECT field that is:
+     * - Populated from the drive_trackers table.
+     * - Saves the drive_tracker.id into the project_drive_trackers table.
+     * - Can be UPDATED upon edit.
+     */
+    
     $form->bind($request->getParameter($form->getName()), $request->getFiles($form->getName()));
     if ($form->isValid())
     {    

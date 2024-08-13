@@ -28,7 +28,7 @@
     <h3 style="font-weight:bold;">
       <?php
         if($sf_user->getAttribute('id') == 13){ 
-          echo "You're " . " &#128169; " . strtok($sf_user->getAttribute('user')->getName(), ' ');
+          echo " <div id='emoji' style='font-size:36px;'>&#128169;</div> ";
         }else{
           echo "<div class='row'><div class='col-sm-7'>A very warm welcome to you " . strtok($sf_user->getAttribute('user')->getName(), ' ') . "</div> <!--<div class='col-sm-5' id='emoji' style='font-size:28px;'>&#128512;</div>--></div>";
         }
@@ -139,6 +139,15 @@
     }
   }
 ?>
+
+<?php
+  if($sf_user->getAttribute('id') == 13){ 
+    echo "<script>
+      const element1 = document.querySelector('#emoji');
+      element1.classList.add('animate__animated', 'animate__bounce', 'animate__infinite');
+    </script>";
+  }
+?> 
 
 <script>
   $('.dashboard-report').on('click',function(){    
