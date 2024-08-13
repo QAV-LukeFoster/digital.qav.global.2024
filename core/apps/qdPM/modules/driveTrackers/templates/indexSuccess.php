@@ -9,7 +9,7 @@
     <td><?php  echo $lc->insert_button(__('Add New Storage Media')) ?></td>
     <td>
         <div class="pull-right" style="font-size:14px; font-weight:normal;">
-            <span class="label label-danger">The next Drive ID will be <span style="font-weight:bold;"> <?php echo $getNewDriveName ?></span></span>
+            <span class="label label-danger">&nbsp;&nbsp;&nbsp;The next Drive ID will be <span style="font-weight:bold;"> <?php echo $getNewDriveName ?></span>&nbsp;&nbsp;&nbsp;</span>
         </div>
     </td>
   </tr>
