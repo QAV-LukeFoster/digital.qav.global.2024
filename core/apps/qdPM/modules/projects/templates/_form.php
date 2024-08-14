@@ -82,6 +82,16 @@
       </div>  
       
       <?php echo ExtraFieldsList::renderFormFiledsByType('projects',$form->getObject(),$sf_user,'input')?>
+
+      <div class="form-group">
+      	<label class="col-md-3 control-label">Physical Media: Location</label>
+      	<div class="col-md-9">
+      		<select class="form-control input-large valid" name="physical_media_location" id="physical_media_location">
+            <option value="0" selected>Not Applicable</option>
+            <option value="1">x00001</option>
+          </select>
+      	</div>
+      </div> 
       
       <div class="form-group">
       	<label class="col-md-3 control-label"> <?php echo $form['description']->renderLabel() ?></label>
