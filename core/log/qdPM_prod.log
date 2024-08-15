@@ -41,3 +41,10 @@ Aug 13 11:08:57 symfony [crit] {Doctrine_Exception} Couldn't find class s
 Aug 13 11:09:22 symfony [crit] {Doctrine_Exception} Couldn't find class s
 Aug 13 11:09:24 symfony [crit] {Doctrine_Exception} Couldn't find class s
 Aug 13 11:09:33 symfony [crit] {Doctrine_Exception} Couldn't find class s
+Aug 15 13:47:00 symfony [crit] {Doctrine_Connection_Mysql_Exception} SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+Aug 15 13:47:12 symfony [crit] {Doctrine_Connection_Mysql_Exception} SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+Aug 15 13:47:13 symfony [crit] {Doctrine_Connection_Mysql_Exception} SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+Aug 15 13:47:14 symfony [crit] {Doctrine_Connection_Mysql_Exception} SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+Aug 15 13:47:25 symfony [crit] {Doctrine_Connection_Mysql_Exception} SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+Aug 15 13:49:54 symfony [crit] {Doctrine_Connection_Mysql_Exception} SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+Aug 15 13:49:55 symfony [crit] {Doctrine_Connection_Mysql_Exception} SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
