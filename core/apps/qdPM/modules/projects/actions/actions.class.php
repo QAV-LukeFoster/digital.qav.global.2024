@@ -223,7 +223,7 @@ class projectsActions extends sfActions
      * - Populated from the drive_trackers table.
      * - Saves the drive_tracker.id into the project_drive_trackers table.
      * - Can be UPDATED upon edit.
-     */
+    */
     
     $form->bind($request->getParameter($form->getName()), $request->getFiles($form->getName()));
     if ($form->isValid())
@@ -238,6 +238,10 @@ class projectsActions extends sfActions
       if($form->getObject()->isNew()){ $form->setFieldValue('created_at',date('Y-m-d H:i:s')); }
       
       $form->protectFieldsValue();
+
+      // $form->setFieldValue('projects_drive_trackers_id',$form['projects_drive_trackers_id']->getValue());
+
+      // UPDATE CAPACITY
       
       $projects = $form->save();
                 

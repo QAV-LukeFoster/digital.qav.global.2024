@@ -181,7 +181,7 @@ abstract class BaseProjects extends sfDoctrineRecord
              'local' => 'projects_types_id',
              'foreign' => 'id'));
 
-        $this->hasOne('DriveTracker', array(
+        $this->hasOne('DriveTrackers', array(
                'local' => 'projects_drive_trackers_id',
                'foreign' => 'id'));
 
