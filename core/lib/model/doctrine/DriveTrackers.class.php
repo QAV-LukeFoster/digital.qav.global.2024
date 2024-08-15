@@ -33,6 +33,7 @@ class DriveTrackers extends BaseDriveTrackers
         $getNext =  Doctrine_Core::getTable('DriveTrackers')->createQuery()        
                         ->select('MAX(name) AS new_name')
                         ->fetchArray();
+
         $getNextInt = $getNext[0]['new_name']+1;
     
         return $getNextInt;
@@ -43,6 +44,7 @@ class DriveTrackers extends BaseDriveTrackers
         $getNext =  Doctrine_Core::getTable('DriveTrackers')->createQuery()        
                         ->select('MAX(name) AS new_name')
                         ->fetchArray();
+                        
         $getNextInt = $getNext[0]['new_name']+1;
         $str = 'X' . sprintf('%05d', $getNextInt);
     

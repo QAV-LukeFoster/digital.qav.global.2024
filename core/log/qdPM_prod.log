@@ -48,3 +48,4 @@ Aug 15 10:43:52 symfony [crit] {Doctrine_Connection_Mysql_Exception} SQLSTATE[42
 Aug 15 10:49:10 symfony [crit] {InvalidArgumentException} Widget "project_driveTrackers_id" does not exist.
 Aug 15 10:49:48 symfony [crit] {InvalidArgumentException} Widget "project_drive_trackers_id" does not exist.
 Aug 15 14:20:14 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/nice%20ports%2C/Tri%6Eity.txt%2ebak" (/).
+Aug 15 15:15:13 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/audio/small_world.mp3" (/).
