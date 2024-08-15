@@ -45,10 +45,12 @@
   </li>
 	<li>
     <a href="#tab_team" data-toggle="tab"><?php echo __('Team') ?></a>
-  </li>        	
-  <li>
-    <a href="#tab_attachments" data-toggle="tab"><?php echo __('Attachments') ?></a>
   </li>
+  <!--    	
+  <li>
+    <a href="#tab_attachments" data-toggle="tab"><?php //echo __('Attachments') ?></a>
+  </li>
+  -->
 </ul>
 
 
@@ -72,8 +74,8 @@
       		<?php echo $form['projects_status_id'] ?>
       	</div>
       </div>
-      <?php endif ?> 
-      
+      <?php endif ?>
+
       <div class="form-group">
       	<label class="col-md-3 control-label"><span class="required">*</span> <?php echo $form['name']->renderLabel() ?></label>
       	<div class="col-md-9">
@@ -81,17 +83,14 @@
       	</div>
       </div>  
       
-      <?php echo ExtraFieldsList::renderFormFiledsByType('projects',$form->getObject(),$sf_user,'input')?>
-
       <div class="form-group">
-      	<label class="col-md-3 control-label">Physical Media: Location</label>
+      	<label class="col-md-3 control-label"> <?php echo $form['projects_drive_trackers_id']->renderLabel() ?></label>
       	<div class="col-md-9">
-      		<select class="form-control input-large valid" name="physical_media_location" id="physical_media_location">
-            <option value="0" selected>Not Applicable</option>
-            <option value="1">x00001</option>
-          </select>
+      		<?php echo $form['projects_drive_trackers_id'] ?>
       	</div>
-      </div> 
+      </div>  
+      
+      <?php echo ExtraFieldsList::renderFormFiledsByType('projects',$form->getObject(),$sf_user,'input')?>
       
       <div class="form-group">
       	<label class="col-md-3 control-label"> <?php echo $form['description']->renderLabel() ?></label>
@@ -108,10 +107,12 @@
         <div class="tab-pane fade" id="tab_team">
           <?php include_component('projects','team',array('project'=>$form->getObject())) ?>
         </div>
-                                      
+        
+        <!--
         <div class="tab-pane fade" id="tab_attachments"> 
-          <?php include_component('attachments','attachments',array('bind_type'=>'projects','bind_id'=>($form->getObject()->isNew()?0:$form->getObject()->getId()))) ?>
+          <?php //include_component('attachments','attachments',array('bind_type'=>'projects','bind_id'=>($form->getObject()->isNew()?0:$form->getObject()->getId()))) ?>
         </div>
+        -->
                 
       </div>
 

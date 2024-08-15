@@ -238,13 +238,12 @@ class projectsActions extends sfActions
       if($form->getObject()->isNew()){ $form->setFieldValue('created_at',date('Y-m-d H:i:s')); }
       
       $form->protectFieldsValue();
+
+      // $form->setFieldValue('projects_drive_trackers_id',$form['projects_drive_trackers_id']->getValue());
+
+      // UPDATE CAPACITY
       
       $projects = $form->save();
-
-      var_dump($projects->id);
-      die();
-
-      //$projectDrive = ProjectDriveTrackers::getProjectDrive();
                 
       ExtraFieldsList::setValues($request->getParameter('extra_fields'),$projects->getId(),'projects',$this->getUser(),$request);
       
