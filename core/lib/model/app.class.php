@@ -311,6 +311,29 @@ class app
         return $choices;
     }
 
+    public static function getItemsChoicesByTableDriveTracker($t, $add_empty = false, $projects_id = false, $sf_user = false)
+    {
+        $choices = array();
+
+        if ($add_empty)
+        {
+            $choices[''] = '';
+        }
+
+        $l = Doctrine_Core::getTable($t)
+                ->createQuery()
+                ->addWhere('active=1')
+                ->orderBy('sort_order, name')
+                ->fetchArray();
+
+        foreach ($l as $v)
+        {
+            $choices[$v['id']] = 'X' . sprintf('%05d', $v['name']);
+        }    
+
+        return $choices;
+    }
+
     public static function getObjectName($o)
     {
         if (is_object($o))
