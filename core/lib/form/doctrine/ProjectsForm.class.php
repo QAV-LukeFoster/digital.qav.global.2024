@@ -44,8 +44,6 @@ class ProjectsForm extends BaseProjectsForm
 
     $this->widgetSchema['projects_drive_trackers_id'] = new sfWidgetFormChoice(array('choices'=>app::getItemsChoicesByTableDriveTracker('DriveTrackers')),array('class'=>'form-control input-small'));
     $this->setDefault('projects_drive_trackers_id', app::getDefaultValueByTable('DriveTrackers'));
-
-    $this->widgetSchema['projects_size']->setAttributes(array('class'=>'form-control input-small'));
         
   //($this->getObject()->isNew() ? 'autofocus':'')      
     $this->widgetSchema['name']->setAttributes(array('class'=>'form-control input-xlarge required autofocus'));
@@ -58,8 +56,7 @@ class ProjectsForm extends BaseProjectsForm
     
     $this->widgetSchema->setLabels(array('projects_types_id'=>'Type',                                         
                                          'projects_status_id'=>'Status',
-                                         'projects_drive_trackers_id'=>'Physical Media: Location',
-                                         'projects_size' => 'Project Size (GB)'));
+                                         'projects_drive_trackers_id'=>'Physical Media: Location'));
 
   }
 }

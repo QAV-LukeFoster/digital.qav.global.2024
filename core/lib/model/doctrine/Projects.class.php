@@ -75,11 +75,9 @@ class Projects extends BaseProjects
     return $list;
   }
   
-  
   public static function getChoices($model,$sf_user)
   {
     $q = Doctrine_Core::getTable('Projects')->createQuery('p')
-          
           ->leftJoin('p.ProjectsStatus ps')
           ->leftJoin('p.ProjectsTypes pt')          
           ->leftJoin('p.Users')
