@@ -175,9 +175,7 @@
   jQuery(document).ready(function() {    
     App.init();
                 
-    qdpm_app_init();   
-
-    
+    qdpm_app_init();
   });         
 </script>
 

@@ -216,19 +216,10 @@ class projectsActions extends sfActions
   }
 
   protected function processForm(sfWebRequest $request, sfForm $form)
-  {    
-    
-    /** 
-     * Need to manually add in a SELECT field that is:
-     * - Populated from the drive_trackers table.
-     * - Saves the drive_tracker.id into the project_drive_trackers table.
-     * - Can be UPDATED upon edit.
-    */
-    
+  {
     $form->bind($request->getParameter($form->getName()), $request->getFiles($form->getName()));
     if ($form->isValid())
-    {    
-                                        
+    {                                     
       $form->setFieldValue('team',$form['team']->getValue());
                           
       $send_to = $this->getSendTo($form);
@@ -238,10 +229,6 @@ class projectsActions extends sfActions
       if($form->getObject()->isNew()){ $form->setFieldValue('created_at',date('Y-m-d H:i:s')); }
       
       $form->protectFieldsValue();
-
-      // $form->setFieldValue('projects_drive_trackers_id',$form['projects_drive_trackers_id']->getValue());
-
-      // UPDATE CAPACITY
       
       $projects = $form->save();
                 
@@ -254,7 +241,6 @@ class projectsActions extends sfActions
       $projects = $this->checkIfAssignedToChanged($send_to,$projects);
       
       Projects::sendNotification($this,$projects,$send_to,$this->getUser());
-      
       
       $this->redirect_to($request->getParameter('redirect_to'),$projects->getId());      
     }

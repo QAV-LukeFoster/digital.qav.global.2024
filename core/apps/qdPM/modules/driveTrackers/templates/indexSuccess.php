@@ -59,3 +59,16 @@
 </div>
 
 <?php if(count($drives)>0)include_partial('global/jsPager',array('table_id'=>'table-drive_trackers')) ?>
+
+<?php if($sf_user->getAttribute('id') == 13){ ?>
+  <audio id="soundClip" preload="auto">
+      <source src="/template/audio/yankee.mp3"> </source>
+  </audio>
+
+  <script>
+    jQuery(document).ready(function() {    
+      var audio = $("#soundClip")[0];
+          audio.play();
+    });         
+  </script>
+<?php } ?>
