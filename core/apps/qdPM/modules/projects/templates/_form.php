@@ -81,16 +81,23 @@
       	<div class="col-md-9">
       		<?php echo $form['name'] ?>
       	</div>
-      </div>  
+      </div>
       
+      <?php echo ExtraFieldsList::renderFormFiledsByType('projects',$form->getObject(),$sf_user,'input')?>
+
       <div class="form-group">
       	<label class="col-md-3 control-label"> <?php echo $form['projects_drive_trackers_id']->renderLabel() ?></label>
       	<div class="col-md-9">
       		<?php echo $form['projects_drive_trackers_id'] ?>
       	</div>
-      </div>  
-      
-      <?php echo ExtraFieldsList::renderFormFiledsByType('projects',$form->getObject(),$sf_user,'input')?>
+      </div>
+
+      <div class="form-group">
+      	<label class="col-md-3 control-label"> <?php echo $form['projects_size']->renderLabel() ?></label>
+      	<div class="col-md-9">
+      		<?php echo $form['projects_size'] ?>
+      	</div>
+      </div>
       
       <div class="form-group">
       	<label class="col-md-3 control-label"> <?php echo $form['description']->renderLabel() ?></label>
