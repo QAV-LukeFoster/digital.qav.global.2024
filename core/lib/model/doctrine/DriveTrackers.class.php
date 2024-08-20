@@ -51,4 +51,44 @@ class DriveTrackers extends BaseDriveTrackers
         return $str;
     }
 
+    public static function updateFreeSpace($drive, $original_value, $new_value)
+    {
+        $query = Doctrine_Core::getTable('DriveTrackers')->find($drive);
+
+        $freeSpace = $query->getFreeSpace();
+        $original_value = (int)$original_value;
+        $new_value = (int)$new_value;
+        
+
+        $resetFreeSpace = $freeSpace + $original_value;
+        $updatedFreeSpace = $resetFreeSpace - $new_value;
+
+        $runQuery = Doctrine_Query::create()
+                                ->update('DriveTrackers u')
+                                ->set('u.free_space', $updatedFreeSpace)
+                                ->where('u.id = ?', $drive)
+                                ->execute();
+
+        //var_dump($original_value);
+        //var_dump($runQuery);
+        //die();
+
+    }
+
+    public static function createFreeSpace($drive, $new_value)
+    {
+        $query = Doctrine_Core::getTable('DriveTrackers')->find($drive);
+
+        $freeSpace = $query->getFreeSpace();
+        $updatedFreeSpace = $freeSpace - $new_value;
+
+        $runQuery = Doctrine_Query::create()
+                                ->update('DriveTrackers u')
+                                ->set('u.free_space', $updatedFreeSpace)
+                                ->where('u.id = ?', $drive)
+                                ->execute();
+
+        return true;
+    }
+
 }

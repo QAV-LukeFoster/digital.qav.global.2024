@@ -22,32 +22,6 @@ class driveTrackersActions extends sfActions
                ->addWhere('id!=1')
                ->execute();
 
-    /**
-     * 
-     * Free Capacity Calculation *
-     * 
-     * $query_one = [drive_trackers]: GET restricted WHERE {capacity} != NULL;
-     * $query_two = [projects]: GET restrictive WHERE {projects_drive_trackers_id} != NULL;
-     * 
-     * for_each($query_one)
-     *    SET {$query_one.free_space} = {$query_one.capacity}
-     *    
-     *        for_each($query_two.project_drive_trackers_id == $query_one.id)
-     *          $free_space = {$query_one.free_space} - {$query_two.project_size_gb}
-     *        end
-     *  end
-     * 
-    */
-
-    $drives_with_capacity = Doctrine_Core::getTable('DriveTrackers')
-                              ->createQuery('u')
-                              ->addWhere('id!=1')
-                              ->addWhere('capacity!=')
-                              ->execute();
-                      
-    // var_dump($drives_with_capacity);
-    // die();
-
     $this->drives = $table;
     $this->getNewDriveName = DriveTrackers::getNextDriveName();
 

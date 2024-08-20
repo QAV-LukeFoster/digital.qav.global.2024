@@ -233,6 +233,43 @@ class projectsActions extends sfActions
       $projects = $form->save();
                 
       ExtraFieldsList::setValues($request->getParameter('extra_fields'),$projects->getId(),'projects',$this->getUser(),$request);
+
+      // *** Update drive_trackers.free_space *** //
+
+      if(!$form->getObject()->isNew()){
+        // UPDATE FORM //
+        $original_value_arr = $projects->getProjectSizeValue($projects->getId());
+        $original_id = $original_value_arr[0]['id'];
+        $original_value = $original_value_arr[0]['value'];
+        $new_value = $request['extra_fields'][22];
+
+        //if(!$new_value == $original_value){
+
+          $drive = $form['projects_drive_trackers_id']->getValue();
+
+          var_dump($drive);
+          var_dump($original_value);
+          var_dump($new_value);
+          die();
+
+          if(!$drive == 1){
+            DriveTrackers::updateFreeSpace($drive, $original_value, $new_value );
+          }
+        //}
+      }
+
+      if($form->getObject()->isNew()){
+        // CREATE FORM //
+        $new_value = $request['extra_fields'][22];
+
+        $drive = $form['projects_drive_trackers_id']->getValue();
+
+        if(!$drive == 0){
+          DriveTrackers::createFreeSpace($drive, $new_value);
+        }
+      }
+
+      // *** //
       
       Attachments::insertAttachments($request->getFiles(),'projects',$projects->getId(),$request->getParameter('attachments_info'),$this->getUser());
       

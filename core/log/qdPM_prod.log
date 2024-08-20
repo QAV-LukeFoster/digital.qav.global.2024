@@ -49,3 +49,27 @@ Aug 15 10:49:10 symfony [crit] {InvalidArgumentException} Widget "project_driveT
 Aug 15 10:49:48 symfony [crit] {InvalidArgumentException} Widget "project_drive_trackers_id" does not exist.
 Aug 15 14:20:14 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/nice%20ports%2C/Tri%6Eity.txt%2ebak" (/).
 Aug 15 15:15:13 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/audio/small_world.mp3" (/).
+Aug 19 10:39:36 symfony [crit] {InvalidArgumentException} Widget "extra_fields_22" does not exist.
+Aug 19 10:40:10 symfony [crit] {InvalidArgumentException} Widget "extra_fields[22]" does not exist.
+Aug 19 10:40:56 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/projects/" (/).
+Aug 19 11:18:52 symfony [crit] {Doctrine_Record_UnknownPropertyException} Unknown record property / related component "project_size_value" on "Projects"
+Aug 19 11:22:03 symfony [crit] {Doctrine_Record_UnknownPropertyException} Unknown record property / related component "project_size_value" on "Projects"
+Aug 19 11:22:05 symfony [crit] {Doctrine_Record_UnknownPropertyException} Unknown record property / related component "project_size_value" on "Projects"
+Aug 19 11:24:34 symfony [crit] {Doctrine_Record_UnknownPropertyException} Unknown record property / related component "project_size_value" on "Projects"
+Aug 19 11:24:51 symfony [crit] {Doctrine_Record_UnknownPropertyException} Unknown record property / related component "project_size_value" on "Projects"
+Aug 19 11:30:51 symfony [crit] {Doctrine_Record_UnknownPropertyException} Unknown record property / related component "project_size_value" on "Projects"
+Aug 19 11:30:52 symfony [crit] {Doctrine_Record_UnknownPropertyException} Unknown record property / related component "project_size_value" on "Projects"
+Aug 19 11:30:53 symfony [crit] {Doctrine_Record_UnknownPropertyException} Unknown record property / related component "project_size_value" on "Projects"
+Aug 19 11:37:27 symfony [crit] {Doctrine_Record_UnknownPropertyException} Unknown record property / related component "project_size_value" on "Projects"
+Aug 19 11:38:22 symfony [crit] {Doctrine_Record_UnknownPropertyException} Unknown record property / related component "project_size_value" on "Projects"
+Aug 19 12:15:24 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/projects/" (/).
+Aug 19 15:14:56 symfony [crit] {Doctrine_Exception} Couldn't find class DriveTracker
+Aug 19 16:26:11 symfony [crit] {Doctrine_Connection_Mysql_Exception} SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+Aug 19 16:52:42 symfony [crit] {Doctrine_Connection_Mysql_Exception} SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+Aug 19 16:53:08 symfony [crit] {Doctrine_Connection_Mysql_Exception} SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+Aug 19 16:53:59 symfony [crit] {Doctrine_Connection_Mysql_Exception} SQLSTATE[HY093]: Invalid parameter number: parameter was not defined
+Aug 19 16:55:40 symfony [crit] {Doctrine_Connection_Mysql_Exception} SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+Aug 19 16:58:51 symfony [crit] {Doctrine_Query_Exception} Unknown component alias u
+Aug 19 16:59:20 symfony [crit] {Doctrine_Connection_Mysql_Exception} SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+Aug 19 17:05:12 symfony [crit] {Doctrine_Connection_Mysql_Exception} SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+Aug 19 17:05:45 symfony [crit] {Doctrine_Connection_Mysql_Exception} SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
