@@ -73,3 +73,51 @@ Aug 19 16:58:51 symfony [crit] {Doctrine_Query_Exception} Unknown component alia
 Aug 19 16:59:20 symfony [crit] {Doctrine_Connection_Mysql_Exception} SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
 Aug 19 17:05:12 symfony [crit] {Doctrine_Connection_Mysql_Exception} SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
 Aug 19 17:05:45 symfony [crit] {Doctrine_Connection_Mysql_Exception} SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+Aug 20 13:27:01 symfony [err] {sfError404Exception} Action "template/images" does not exist.
+Aug 20 13:27:35 symfony [err] {sfError404Exception} Action "template/image" does not exist.
+Aug 20 13:27:59 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/images/disney.svg" (/).
+Aug 20 16:23:36 symfony [crit] {Doctrine_Connection_Mysql_Exception} SQLSTATE[42S22]: Column not found: 1054 Unknown column 'p.project_drive_trackers_id' in 'on clause'. Failing Query: "SELECT `d`.`id` AS `d__id`, `d`.`name` AS `d__name`, `d`.`type` AS `d__type`, `d`.`encrypt_id` AS `d__encrypt_id`, `d`.`encrypt_key` AS `d__encrypt_key`, `d`.`associations` AS `d__associations`, `d`.`legacy` AS `d__legacy`, `d`.`legacy_info` AS `d__legacy_info`, `d`.`capacity` AS `d__capacity`, `d`.`free_space` AS `d__free_space`, `d`.`record_disabled` AS `d__record_disabled`, `d`.`year` AS `d__year`, `d`.`active` AS `d__active`, `p`.`id` AS `p__id`, `p`.`projects_status_id` AS `p__projects_status_id`, `p`.`projects_types_id` AS `p__projects_types_id`, `p`.`projects_drive_trackers_id` AS `p__projects_drive_trackers_id`, `p`.`created_by` AS `p__created_by`, `p`.`name` AS `p__name`, `p`.`description` AS `p__description`, `p`.`team` AS `p__team`, `p`.`created_at` AS `p__created_at`, `p`.`order_tasks_by` AS `p__order_tasks_by` FROM `drive_trackers` `d` LEFT JOIN `projects` `p` ON `d`.`id` = `p`.`project_drive_trackers_id` WHERE (`d`.`id` != 1)"
+Aug 20 16:27:16 symfony [crit] {Doctrine_Record_UnknownPropertyException} Unknown record property / related component "<pre>
+alias : DriveTrackers
+foreign : id
+local : projects_drive_trackers_id
+class : DriveTrackers
+type : 0
+table : Object(DriveTrackersTable)
+localTable : Object(ProjectsTable)
+name : 
+refTable : 
+onDelete : 
+onUpdate : 
+deferred : 
+deferrable : 
+constraint : 
+equal : 
+cascade : Array
+owningSide : 
+refClassRelationAlias : 
+foreignKeyName : 
+orderBy : 
+</pre>" on "Projects"
+Aug 20 16:32:58 symfony [crit] {Doctrine_Record_UnknownPropertyException} Unknown record property / related component "<pre>
+alias : DriveTrackers
+foreign : id
+local : projects_drive_trackers_id
+class : DriveTrackers
+type : 0
+table : Object(DriveTrackersTable)
+localTable : Object(ProjectsTable)
+name : 
+refTable : 
+onDelete : 
+onUpdate : 
+deferred : 
+deferrable : 
+constraint : 
+equal : 
+cascade : Array
+owningSide : 
+refClassRelationAlias : 
+foreignKeyName : 
+orderBy : 
+</pre>" on "Projects"

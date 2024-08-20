@@ -58,7 +58,6 @@ class DriveTrackers extends BaseDriveTrackers
         $freeSpace = $query->getFreeSpace();
         $original_value = (int)$original_value;
         $new_value = (int)$new_value;
-        
 
         $resetFreeSpace = $freeSpace + $original_value;
         $updatedFreeSpace = $resetFreeSpace - $new_value;
@@ -68,10 +67,21 @@ class DriveTrackers extends BaseDriveTrackers
                                 ->set('u.free_space', $updatedFreeSpace)
                                 ->where('u.id = ?', $drive)
                                 ->execute();
+        
+        // *** //
 
-        //var_dump($original_value);
-        //var_dump($runQuery);
-        //die();
+        $query = Doctrine_Core::getTable('DriveTrackers')->find($drive);
+
+        $freeSpace = $query->getFreeSpace();
+        $capacity = ($query->getCapacity() * 0.1);
+
+        if($freeSpace < $capacity){
+            $runQuery = Doctrine_Query::create()
+                                ->update('DriveTrackers u')
+                                ->set('u.active', 2)
+                                ->where('u.id = ?', $drive)
+                                ->execute();
+        }
 
     }
 
@@ -88,7 +98,19 @@ class DriveTrackers extends BaseDriveTrackers
                                 ->where('u.id = ?', $drive)
                                 ->execute();
 
-        return true;
-    }
+        // *** //
 
+        $query = Doctrine_Core::getTable('DriveTrackers')->find($drive);
+
+        $freeSpace = $query->getFreeSpace();
+        $capacity = ($query->getCapacity() * 0.1);
+
+        if($freeSpace < $capacity){
+            $runQuery = Doctrine_Query::create()
+                                ->update('DriveTrackers u')
+                                ->set('u.active', 2)
+                                ->where('u.id = ?', $drive)
+                                ->execute();
+        }
+    }
 }

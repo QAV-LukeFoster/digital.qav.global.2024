@@ -19,6 +19,7 @@ class driveTrackersActions extends sfActions
   {
     $table = Doctrine_Core::getTable('DriveTrackers')
                ->createQuery('u')
+               ->leftJoin('u.Projects p')
                ->addWhere('id!=1')
                ->execute();
 

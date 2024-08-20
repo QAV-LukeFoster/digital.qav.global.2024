@@ -170,6 +170,16 @@ abstract class BaseDriveTrackers extends sfDoctrineRecord
              'autoincrement' => false,
              'length' => 4,
              ));
+         $this->hasColumn('active', 'integer', 11, array(
+               'type' => 'integer',
+               'fixed' => 0,
+               'unsigned' => false,
+               'primary' => false,
+               'default' => '1',
+               'notnull' => false,
+               'autoincrement' => false,
+               'length' => 11,
+               ));
     }
 
     public function setUp()
@@ -177,7 +187,7 @@ abstract class BaseDriveTrackers extends sfDoctrineRecord
         parent::setUp();
         $this->hasMany('Projects', array(
           'local' => 'id',
-          'foreign' => 'project_drive_trackers_id'));
+          'foreign' => 'projects_drive_trackers_id'));
         
     }
 }

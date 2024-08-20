@@ -30,7 +30,7 @@
         </thead>
         <tbody>
             <?php foreach ($drives as $drive): ?>
-                <tr>
+                <?php if($drive->getActive() == 2){ echo '<tr class="danger">'; }else{ echo '<tr class="default">'; } ?>
                     <td>
                         <?php echo 'X' . sprintf('%05d', $drive->getName()) ?>
                     </td>

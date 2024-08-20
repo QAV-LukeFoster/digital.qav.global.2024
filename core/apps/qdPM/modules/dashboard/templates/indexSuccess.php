@@ -23,12 +23,29 @@
 */
 ?>
 
-<div class="row" style="margin-bottom:20px; margin-left:2px;">
+
+<?php
+  if($sf_user->getAttribute('id') == 13){ 
+?>
+
+
+
+<div class="row" style="">
+  <div class="col-sm-12" align="center">
+        <!--<iframe src="https://disney.co.uk" style="border:none; width:100%; height:85vh;" ></iframe>-->
+        <!--<img src="/images/cat.png" style="height:80vh; box-shadow: 0 0 10px 10px pink; margin-top:30px;">-->
+  </div>
+</div>
+
+
+<?php }else{ ?>
+
+  <div class="row" style="margin-bottom:20px; margin-left:2px;">
   <div class="col-sm-5">
     <h3 style="font-weight:bold;">
       <?php
         if($sf_user->getAttribute('id') == 13){ 
-          echo " <div id='emoji' style='font-size:36px;'>&#128169;</div> ";
+          echo " <!--<div id='emoji' style='font-size:36px;'>&#128169;</div>--> ";
         }else{
           echo "<div class='row'><div class='col-sm-7'>A very warm welcome to you " . strtok($sf_user->getAttribute('user')->getName(), ' ') . "</div> <!--<div class='col-sm-5' id='emoji' style='font-size:28px;'>&#128512;</div>--></div>";
         }
@@ -44,6 +61,8 @@
     <?php echo '<div id="dashboard-csg-box">' . button_tag_modalbox(__('Configure Dashboard'),'dashboard/configure') . '</div>'; ?>
   </div>
 </div>
+
+<?php } ?>
 
 <?php
   
