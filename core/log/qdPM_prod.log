@@ -121,3 +121,47 @@ refClassRelationAlias :
 foreignKeyName : 
 orderBy : 
 </pre>" on "Projects"
+Aug 20 16:38:24 symfony [crit] {Doctrine_Record_UnknownPropertyException} Unknown record property / related component "<pre>
+alias : DriveTrackers
+foreign : id
+local : projects_drive_trackers_id
+class : DriveTrackers
+type : 0
+table : Object(DriveTrackersTable)
+localTable : Object(ProjectsTable)
+name : 
+refTable : 
+onDelete : 
+onUpdate : 
+deferred : 
+deferrable : 
+constraint : 
+equal : 
+cascade : Array
+owningSide : 
+refClassRelationAlias : 
+foreignKeyName : 
+orderBy : 
+</pre>" on "Projects"
+Aug 21 09:38:18 symfony [crit] {Doctrine_Record_UnknownPropertyException} Unknown record property / related component "<pre>
+alias : DriveTrackers
+foreign : id
+local : projects_drive_trackers_id
+class : DriveTrackers
+type : 0
+table : Object(DriveTrackersTable)
+localTable : Object(ProjectsTable)
+name : 
+refTable : 
+onDelete : 
+onUpdate : 
+deferred : 
+deferrable : 
+constraint : 
+equal : 
+cascade : Array
+owningSide : 
+refClassRelationAlias : 
+foreignKeyName : 
+orderBy : 
+</pre>" on "Projects"
