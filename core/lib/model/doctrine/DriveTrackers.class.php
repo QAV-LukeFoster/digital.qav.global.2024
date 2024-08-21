@@ -67,8 +67,6 @@ class DriveTrackers extends BaseDriveTrackers
                                 ->set('u.free_space', $updatedFreeSpace)
                                 ->where('u.id = ?', $drive)
                                 ->execute();
-        
-        // *** //
 
         $query = Doctrine_Core::getTable('DriveTrackers')->find($drive);
 
@@ -97,8 +95,6 @@ class DriveTrackers extends BaseDriveTrackers
                                 ->set('u.free_space', $updatedFreeSpace)
                                 ->where('u.id = ?', $drive)
                                 ->execute();
-
-        // *** //
 
         $query = Doctrine_Core::getTable('DriveTrackers')->find($drive);
 

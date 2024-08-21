@@ -165,3 +165,119 @@ refClassRelationAlias :
 foreignKeyName : 
 orderBy : 
 </pre>" on "Projects"
+Aug 21 09:39:35 symfony [crit] {Doctrine_Record_UnknownPropertyException} Unknown record property / related component "<pre>
+alias : DriveTrackers
+foreign : id
+local : projects_drive_trackers_id
+class : DriveTrackers
+type : 0
+table : Object(DriveTrackersTable)
+localTable : Object(ProjectsTable)
+name : 
+refTable : 
+onDelete : 
+onUpdate : 
+deferred : 
+deferrable : 
+constraint : 
+equal : 
+cascade : Array
+owningSide : 
+refClassRelationAlias : 
+foreignKeyName : 
+orderBy : 
+</pre>" on "Projects"
+Aug 21 09:41:45 symfony [crit] {Doctrine_Record_UnknownPropertyException} Unknown record property / related component "<pre>
+alias : DriveTrackers
+foreign : id
+local : projects_drive_trackers_id
+class : DriveTrackers
+type : 0
+table : Object(DriveTrackersTable)
+localTable : Object(ProjectsTable)
+name : 
+refTable : 
+onDelete : 
+onUpdate : 
+deferred : 
+deferrable : 
+constraint : 
+equal : 
+cascade : Array
+owningSide : 
+refClassRelationAlias : 
+foreignKeyName : 
+orderBy : 
+</pre>" on "Projects"
+Aug 21 09:42:08 symfony [crit] {Doctrine_Record_UnknownPropertyException} Unknown record property / related component "<pre>
+alias : DriveTrackers
+foreign : id
+local : projects_drive_trackers_id
+class : DriveTrackers
+type : 0
+table : Object(DriveTrackersTable)
+localTable : Object(ProjectsTable)
+name : 
+refTable : 
+onDelete : 
+onUpdate : 
+deferred : 
+deferrable : 
+constraint : 
+equal : 
+cascade : Array
+owningSide : 
+refClassRelationAlias : 
+foreignKeyName : 
+orderBy : 
+</pre>" on "Projects"
+Aug 21 09:45:14 symfony [crit] {Doctrine_Record_UnknownPropertyException} Unknown record property / related component "<pre>
+alias : DriveTrackers
+foreign : id
+local : projects_drive_trackers_id
+class : DriveTrackers
+type : 0
+table : Object(DriveTrackersTable)
+localTable : Object(ProjectsTable)
+name : 
+refTable : 
+onDelete : 
+onUpdate : 
+deferred : 
+deferrable : 
+constraint : 
+equal : 
+cascade : Array
+owningSide : 
+refClassRelationAlias : 
+foreignKeyName : 
+orderBy : 
+</pre>" on "Projects"
+Aug 21 09:49:41 symfony [crit] {Doctrine_Record_UnknownPropertyException} Unknown record property / related component "<pre>
+alias : DriveTrackers
+foreign : id
+local : projects_drive_trackers_id
+class : DriveTrackers
+type : 0
+table : Object(DriveTrackersTable)
+localTable : Object(ProjectsTable)
+name : 
+refTable : 
+onDelete : 
+onUpdate : 
+deferred : 
+deferrable : 
+constraint : 
+equal : 
+cascade : Array
+owningSide : 
+refClassRelationAlias : 
+foreignKeyName : 
+orderBy : 
+</pre>" on "Projects"
+Aug 21 09:58:40 symfony [crit] {Doctrine_Record_UnknownPropertyException} Unknown record property / related component "p.id" on "Projects"
+Aug 21 10:38:39 symfony [crit] {Doctrine_Record_UnknownPropertyException} Unknown record property / related component "d.name" on "Projects"
+Aug 21 11:18:15 symfony [crit] {Doctrine_Exception} Couldn't find class p
+Aug 21 11:18:42 symfony [crit] {Doctrine_Connection_Mysql_Exception} SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'SELECT AS `d__0`, `d`.`name` AS `d__1` FROM `drive_trackers` `d` WHERE (`d`.`id`' at line 1. Failing Query: "SELECT SELECT AS `d__0`, `d`.`name` AS `d__1` FROM `drive_trackers` `d` WHERE (`d`.`id` != 1)"
+Aug 21 11:19:25 symfony [crit] {Doctrine_Connection_Mysql_Exception} SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'SELECT AS `d__0`, 'name' AS `d__1` FROM `drive_trackers` `d` WHERE (`d`.`id` != ' at line 1. Failing Query: "SELECT SELECT AS `d__0`, 'name' AS `d__1` FROM `drive_trackers` `d` WHERE (`d`.`id` != 1)"
+Aug 21 11:24:44 symfony [crit] {Doctrine_Exception} Couldn't find class u

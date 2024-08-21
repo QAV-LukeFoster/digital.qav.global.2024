@@ -185,7 +185,7 @@ abstract class BaseDriveTrackers extends sfDoctrineRecord
     public function setUp()
     {
         parent::setUp();
-        $this->hasMany('Projects', array(
+        $this->hasOne('Projects', array(
           'local' => 'id',
           'foreign' => 'projects_drive_trackers_id'));
         
