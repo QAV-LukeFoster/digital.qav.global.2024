@@ -50,7 +50,7 @@ Doctrine_Manager::getInstance()->bindComponent('DriveTracker', 'doctrine');
  * @author     QAV Digital
  * @version    SVN: $Id: Builder.php 7490 2010-03-29 19:53:27Z jwage $
  */
-abstract class BaseDriveTracker extends sfDoctrineRecord
+abstract class BaseDriveTrackers extends sfDoctrineRecord
 {
     public function setTableDefinition()
     {
@@ -170,11 +170,24 @@ abstract class BaseDriveTracker extends sfDoctrineRecord
              'autoincrement' => false,
              'length' => 4,
              ));
+     $this->hasColumn('active', 'integer', 11, array(
+               'type' => 'integer',
+               'fixed' => 0,
+               'unsigned' => false,
+               'primary' => false,
+               'default' => '1',
+               'notnull' => false,
+               'autoincrement' => false,
+               'length' => 11,
+               ));
     }
 
     public function setUp()
     {
         parent::setUp();
+        $this->hasOne('Projects', array(
+          'local' => 'id',
+          'foreign' => 'projects_drive_trackers_id'));
         
     }
 }

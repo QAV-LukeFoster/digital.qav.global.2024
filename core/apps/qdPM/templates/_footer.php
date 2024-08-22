@@ -24,6 +24,7 @@
 ?>
 <!-- BEGIN FOOTER -->
 <div class="footer">
+	
 	<div class="footer-inner pull-right" style="margin-top:8px; font-size:14px;">
 		<!--
 			<div aligh="right" style="width:600px; background:aliceblue; border-radius:5px; margin-top:8px; font-size:11px; margin-right:-4px; box-shadow:2px 2px #000;">

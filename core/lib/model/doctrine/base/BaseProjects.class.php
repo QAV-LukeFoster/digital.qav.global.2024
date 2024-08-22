@@ -28,49 +28,50 @@ Doctrine_Manager::getInstance()->bindComponent('Projects', 'doctrine');
  * @property Doctrine_Collection $Tickets
  * @property Doctrine_Collection $Versions
  * 
- * @method integer             getId()                 Returns the current record's "id" value
- * @method integer             getProjectsStatusId()   Returns the current record's "projects_status_id" value
- * @method integer             getProjectsTypesId()    Returns the current record's "projects_types_id" value
+ * @method integer             getId()                         Returns the current record's "id" value
+ * @method integer             getProjectsStatusId()           Returns the current record's "projects_status_id" value
+ * @method integer             getProjectsTypesId()            Returns the current record's "projects_types_id" value
  * @method integer             getProjectsDriveTrackersId()    Returns the current record's "projects_drive_trackers_id" value
- * @method integer             getCreatedBy()          Returns the current record's "created_by" value
- * @method string              getName()               Returns the current record's "name" value
- * @method string              getDescription()        Returns the current record's "description" value
- * @method string              getTeam()               Returns the current record's "team" value
- * @method timestamp           getCreatedAt()          Returns the current record's "created_at" value
- * @method string              getOrderTasksBy()       Returns the current record's "order_tasks_by" value
- * @method ProjectsStatus      getProjectsStatus()     Returns the current record's "ProjectsStatus" value
- * @method ProjectsTypes       getProjectsTypes()      Returns the current record's "ProjectsTypes" value
- * @method Users               getUsers()              Returns the current record's "Users" value
- * @method Doctrine_Collection getDiscussions()        Returns the current record's "Discussions" collection
- * @method Doctrine_Collection getProjectsComments()   Returns the current record's "ProjectsComments" collection
- * @method Doctrine_Collection getProjectsPhases()     Returns the current record's "ProjectsPhases" collection
- * @method Doctrine_Collection getTasks()              Returns the current record's "Tasks" collection
- * @method Doctrine_Collection getTasksGroups()        Returns the current record's "TasksGroups" collection
- * @method Doctrine_Collection getTickets()            Returns the current record's "Tickets" collection
- * @method Doctrine_Collection getVersions()           Returns the current record's "Versions" collection
- * @method Projects            setId()                 Sets the current record's "id" value
- * @method Projects            setProjectsStatusId()   Sets the current record's "projects_status_id" value
- * @method Projects            setProjectsTypesId()    Sets the current record's "projects_types_id" value
- * @method Projects            setCreatedBy()          Sets the current record's "created_by" value
- * @method Projects            setName()               Sets the current record's "name" value
- * @method Projects            setDescription()        Sets the current record's "description" value
- * @method Projects            setTeam()               Sets the current record's "team" value
- * @method Projects            setCreatedAt()          Sets the current record's "created_at" value
- * @method Projects            setOrderTasksBy()       Sets the current record's "order_tasks_by" value
- * @method Projects            setProjectsStatus()     Sets the current record's "ProjectsStatus" value
- * @method Projects            setProjectsTypes()      Sets the current record's "ProjectsTypes" value
- * @method Projects            setUsers()              Sets the current record's "Users" value
- * @method Projects            setDiscussions()        Sets the current record's "Discussions" collection
- * @method Projects            setProjectsComments()   Sets the current record's "ProjectsComments" collection
- * @method Projects            setProjectsPhases()     Sets the current record's "ProjectsPhases" collection
- * @method Projects            setTasks()              Sets the current record's "Tasks" collection
- * @method Projects            setTasksGroups()        Sets the current record's "TasksGroups" collection
- * @method Projects            setTickets()            Sets the current record's "Tickets" collection
- * @method Projects            setVersions()           Sets the current record's "Versions" collection
+ * @method integer             getCreatedBy()                  Returns the current record's "created_by" value
+ * @method string              getName()                       Returns the current record's "name" value
+ * @method string              getDescription()                Returns the current record's "description" value
+ * @method string              getTeam()                       Returns the current record's "team" value
+ * @method timestamp           getCreatedAt()                  Returns the current record's "created_at" value
+ * @method string              getOrderTasksBy()               Returns the current record's "order_tasks_by" value
+ * @method ProjectsStatus      getProjectsStatus()             Returns the current record's "ProjectsStatus" value
+ * @method ProjectsTypes       getProjectsTypes()              Returns the current record's "ProjectsTypes" value
+ * @method Users               getUsers()                      Returns the current record's "Users" value
+ * @method Doctrine_Collection getDiscussions()                Returns the current record's "Discussions" collection
+ * @method Doctrine_Collection getProjectsComments()           Returns the current record's "ProjectsComments" collection
+ * @method Doctrine_Collection getProjectsPhases()             Returns the current record's "ProjectsPhases" collection
+ * @method Doctrine_Collection getTasks()                      Returns the current record's "Tasks" collection
+ * @method Doctrine_Collection getTasksGroups()                Returns the current record's "TasksGroups" collection
+ * @method Doctrine_Collection getTickets()                    Returns the current record's "Tickets" collection
+ * @method Doctrine_Collection getVersions()                   Returns the current record's "Versions" collection
+ * @method Projects            setId()                         Sets the current record's "id" value
+ * @method Projects            setProjectsStatusId()           Sets the current record's "projects_status_id" value
+ * @method Projects            setProjectsTypesId()            Sets the current record's "projects_types_id" value
+ * @method Projects            setProjectsDriveTrackersId()    Sets the current record's "projects_drive_trackers_id" value
+ * @method Projects            setCreatedBy()                  Sets the current record's "created_by" value
+ * @method Projects            setName()                       Sets the current record's "name" value
+ * @method Projects            setDescription()                Sets the current record's "description" value
+ * @method Projects            setTeam()                       Sets the current record's "team" value
+ * @method Projects            setCreatedAt()                  Sets the current record's "created_at" value
+ * @method Projects            setOrderTasksBy()               Sets the current record's "order_tasks_by" value
+ * @method Projects            setProjectsStatus()             Sets the current record's "ProjectsStatus" value
+ * @method Projects            setProjectsTypes()              Sets the current record's "ProjectsTypes" value
+ * @method Projects            setUsers()                      Sets the current record's "Users" value
+ * @method Projects            setDiscussions()                Sets the current record's "Discussions" collection
+ * @method Projects            setProjectsComments()           Sets the current record's "ProjectsComments" collection
+ * @method Projects            setProjectsPhases()             Sets the current record's "ProjectsPhases" collection
+ * @method Projects            setTasks()                      Sets the current record's "Tasks" collection
+ * @method Projects            setTasksGroups()                Sets the current record's "TasksGroups" collection
+ * @method Projects            setTickets()                    Sets the current record's "Tickets" collection
+ * @method Projects            setVersions()                   Sets the current record's "Versions" collection
  * 
  * @package    sf_sandbox
  * @subpackage model
- * @author     Your name here
+ * @author     QAV Digital
  * @version    SVN: $Id: Builder.php 7490 2010-03-29 19:53:27Z jwage $
  */
 abstract class BaseProjects extends sfDoctrineRecord
@@ -105,14 +106,14 @@ abstract class BaseProjects extends sfDoctrineRecord
              'length' => 4,
              ));
         $this->hasColumn('projects_drive_trackers_id', 'integer', 4, array(
-               'type' => 'integer',
-               'fixed' => 0,
-               'unsigned' => false,
-               'primary' => false,
-               'notnull' => false,
-               'autoincrement' => false,
-               'length' => 4,
-               ));
+             'type' => 'integer',
+             'fixed' => 0,
+             'unsigned' => false,
+             'primary' => false,
+             'notnull' => false,
+             'autoincrement' => false,
+             'length' => 4,
+             ));
         $this->hasColumn('created_by', 'integer', 4, array(
              'type' => 'integer',
              'fixed' => 0,
@@ -182,8 +183,8 @@ abstract class BaseProjects extends sfDoctrineRecord
              'foreign' => 'id'));
 
         $this->hasOne('DriveTrackers', array(
-               'local' => 'projects_drive_trackers_id',
-               'foreign' => 'id'));
+             'local' => 'projects_drive_trackers_id',
+             'foreign' => 'id'));
 
         $this->hasOne('Users', array(
              'local' => 'created_by',

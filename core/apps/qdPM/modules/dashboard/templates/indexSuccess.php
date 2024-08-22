@@ -30,14 +30,6 @@
 
 
 
-<div class="row" style="">
-  <div class="col-sm-12" align="center">
-        <!--<iframe src="https://disney.co.uk" style="border:none; width:100%; height:85vh;" ></iframe>-->
-        <!--<img src="/images/cat.png" style="height:80vh; box-shadow: 0 0 10px 10px pink; margin-top:30px;">-->
-  </div>
-</div>
-
-
 <?php }else{ ?>
 
   <div class="row" style="margin-bottom:20px; margin-left:2px;">

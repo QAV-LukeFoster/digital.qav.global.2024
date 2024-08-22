@@ -29,7 +29,7 @@ Doctrine_Manager::getInstance()->bindComponent('ProjectsStatus', 'doctrine');
  * 
  * @package    sf_sandbox
  * @subpackage model
- * @author     Your name here
+ * @author     QAV Digital
  * @version    SVN: $Id: Builder.php 7490 2010-03-29 19:53:27Z jwage $
  */
 abstract class BaseProjectsStatus extends sfDoctrineRecord

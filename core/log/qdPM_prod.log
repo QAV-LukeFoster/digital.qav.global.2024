@@ -281,3 +281,10 @@ Aug 21 11:18:15 symfony [crit] {Doctrine_Exception} Couldn't find class p
 Aug 21 11:18:42 symfony [crit] {Doctrine_Connection_Mysql_Exception} SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'SELECT AS `d__0`, `d`.`name` AS `d__1` FROM `drive_trackers` `d` WHERE (`d`.`id`' at line 1. Failing Query: "SELECT SELECT AS `d__0`, `d`.`name` AS `d__1` FROM `drive_trackers` `d` WHERE (`d`.`id` != 1)"
 Aug 21 11:19:25 symfony [crit] {Doctrine_Connection_Mysql_Exception} SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'SELECT AS `d__0`, 'name' AS `d__1` FROM `drive_trackers` `d` WHERE (`d`.`id` != ' at line 1. Failing Query: "SELECT SELECT AS `d__0`, 'name' AS `d__1` FROM `drive_trackers` `d` WHERE (`d`.`id` != 1)"
 Aug 21 11:24:44 symfony [crit] {Doctrine_Exception} Couldn't find class u
+Aug 21 11:30:19 symfony [crit] {Doctrine_Table_Exception} Unknown relation alias Projects
+Aug 21 11:45:25 symfony [crit] {Doctrine_Table_Exception} Unknown relation alias Projects
+Aug 21 11:47:27 symfony [crit] {Doctrine_Record_UnknownPropertyException} Unknown record property / related component "active" on "DriveTrackers"
+Aug 21 15:45:29 symfony [crit] {Doctrine_Record_UnknownPropertyException} Unknown record property / related component "0" on "Projects"
+Aug 21 15:45:47 symfony [crit] {Doctrine_Record_UnknownPropertyException} Unknown record property / related component "getId" on "DriveTrackers"
+Aug 21 15:46:00 symfony [crit] {Doctrine_Record_UnknownPropertyException} Unknown record property / related component "0" on "Projects"
+Aug 21 17:09:36 symfony [err] {sfError404Exception} Action "z800/var" does not exist.

@@ -124,10 +124,13 @@
           color:#fff;
         }
       </style>
-      
+      <img class="" src="/images/matt/hills.png">
       <!-- BEGIN CONTENT -->
       <div class="page-content-wrapper">
+          <!-- Try bg-img Matt here -->
+          
       		<div class="page-content" style="background-color::snow; min-height:90vh;">
+            
             <div id="ajax-modal" class="modal fade" tabindex="-1" data-replace="true" data-keyboard="true" data-backdrop="static" data-focus-on=".autofocus" style="background-image: url(<?php echo public_path('images/container.png') ?>); background-size:cover; background-repeat:no-repeat;"></div>
                                  
               <?php if($sf_user->hasFlash('userNotices')) include_partial('global/userNotices', array('userNotices' => $sf_user->getFlash('userNotices'))); ?>
@@ -137,9 +140,12 @@
 
               <?php echo $sf_content ?> 
               <!-- END PAGE CONTENT-->
+              
       		  </div>
+            
           </div>
           <!-- END CONTENT -->
+          
       </div>
     <!-- END CONTAINER -->
     

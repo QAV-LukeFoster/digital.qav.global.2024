@@ -19,22 +19,15 @@ class driveTrackersActions extends sfActions
   {
     $table = Doctrine_Core::getTable('DriveTrackers')
                ->createQuery('d')
-               ->leftJoin('d.Projects p')
-               //->addSelect("SELECT 'id', 'name' FROM projects WHERE d.id = projects_drive_trackers_id")
                ->addWhere('d.id!=1')
                ->execute();
 
-    var_dump($table);
-    die();
-
-    /*
     $tableTwo = Doctrine_Core::getTable('Projects')
                ->createQuery('p')
-               //->leftJoin('p.DriveTrackers d')
-               //->addWhere('p.projects_drive_trackers_id!=')
+               ->addWhere('p.projects_drive_trackers_id!=')
                ->execute();
 
-    $this->associations = $tableTwo;*/
+    $this->associations = $tableTwo;
     $this->drives = $table;
     $this->getNewDriveName = DriveTrackers::getNextDriveName();
 
