@@ -59,7 +59,7 @@
     <?php echo stylesheet_tag('app.css') ?>
     <?php
       $skin = $sf_request->getCookie ('skin', sfConfig::get('app_default_skin','default')); 
-      echo (is_file('css/skins/' . $skin . '/' . $skin. '.css') ? stylesheet_tag('skins/' . $skin . '/' . $skin . '.css') : stylesheet_tag('skins/default/default.css')) 
+      echo (is_file('css/skins/' . $skin . '/' . $skin. '.css') ? stylesheet_tag('skins/' . $skin . '/' . $skin . '.css') : stylesheet_tag('skins/WinterTones/WinterTones.css')) 
     ?>
     
     <?php echo javascript_include_tag('/template/plugins/jquery-1.10.2.min.js') ?>
@@ -127,7 +127,7 @@
                 <div class="form-content">
                 
                     <div class="form-items">
-                    <h3 id="element1" style="font-size: 73px; font-weight:bold;"><span style="font-size: 84px; font-weight:bold;">D</span><span style="">IGITAL</span></h3>
+                    <h3 id="element1" style="font-size: 73px; font-weight:400;"><span style="font-size: 73px; font-weight:bold; color:#7d7d7d;">D</span><span style="">IGITAL</span></h3>
                       <div  id="loginform" class="content" style="margin-bottom:40px;">
                         <?php echo $sf_content ?>
                       </div>

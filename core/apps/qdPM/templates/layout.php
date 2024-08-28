@@ -1,4 +1,4 @@
-<?php
+<span?php
 /**
 *qdPM
 *
@@ -111,7 +111,7 @@
     <?php include_partial('global/header'); ?>
     
     <!-- BEGIN CONTAINER -->
-    <div class="page-container">
+    <div class="page-container" style="">
       <?php include_partial('global/sidebar'); ?>
 
       <style>
@@ -124,12 +124,13 @@
           color:#fff;
         }
       </style>
-      <img class="" src="/images/matt/hills.png">
-      <!-- BEGIN CONTENT -->
+      
+      <!-- BEGIN CONTENT --> 
       <div class="page-content-wrapper">
-          <!-- Try bg-img Matt here -->
-          
-      		<div class="page-content" style="background-color::snow; min-height:90vh;">
+
+      
+          <div class="page-content" style="background-color:snow; min-height:90vh;">
+    
             
             <div id="ajax-modal" class="modal fade" tabindex="-1" data-replace="true" data-keyboard="true" data-backdrop="static" data-focus-on=".autofocus" style="background-image: url(<?php echo public_path('images/container.png') ?>); background-size:cover; background-repeat:no-repeat;"></div>
                                  
@@ -148,6 +149,9 @@
           
       </div>
     <!-- END CONTAINER -->
+    
+    
+
     
     <?php include_partial('global/footer'); ?>
 
@@ -186,11 +190,14 @@
 </script>
 
 <script>
-	// const element = document.querySelector('#jh');
-	// element.classList.add('animate__animated', 'animate__heartBeat', 'animate__infinite', 'animate__slow');
+	//const element = document.querySelector('#matt_disney');
+	//element.classList.add('animate__animated', 'animate__tada', 'animate__infinite');
 
-  // const emoji = document.querySelector('#emoji');
-	// emoji.classList.add('animate__animated', 'animate__headShake', 'animate__infinite');
+  //const hello = document.querySelector('#hello');
+  //hello.classList.add('animate__animated', 'animate__bounceInDown', 'animate__delay-1s');
+
+  //const mathew = document.querySelector('#mathew');
+  //mathew.classList.add('animate__animated', 'animate__bounceInDown', 'animate__delay-2s');
 </script>
 
 <!-- END JAVASCRIPTS -->    

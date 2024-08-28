@@ -40,7 +40,7 @@
                             foreach ($associations as $association):
                             
                                 if ($association['projects_drive_trackers_id'] == $drive->getId()){
-                                    echo '<div style="margin-bottom:3px;"><a class="btn-xs btn-warning" href="/tasks?projects_id=' . $association['id'] . '"> <i class="fa fa-edit"></i></a> ' . $association['name'] . '</div>';
+                                    echo '<div style="margin-bottom:3px;"><a class="btn-xs btn-warning" href="/tasks?projects_id=' . $association['id'] . '"> <i class="fa fa-arrow-right"></i></a> ' . $association['name'] . '</div>';
                                 }
                             
                             endforeach;

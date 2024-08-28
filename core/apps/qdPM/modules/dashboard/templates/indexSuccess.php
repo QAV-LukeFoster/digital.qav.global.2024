@@ -23,38 +23,26 @@
 */
 ?>
 
-
-<?php
-  if($sf_user->getAttribute('id') == 13){ 
-?>
-
-
-
-<?php }else{ ?>
-
   <div class="row" style="margin-bottom:20px; margin-left:2px;">
-  <div class="col-sm-5">
+  <div class="col-sm-10">
     <h3 style="font-weight:bold;">
       <?php
         if($sf_user->getAttribute('id') == 13){ 
-          echo " <!--<div id='emoji' style='font-size:36px;'>&#128169;</div>--> ";
+          echo " <div id='emoji' style=''>Mathew &ndash; age is of no importance unless you're a cheese &#129472;</div> ";
         }else{
-          echo "<div class='row'><div class='col-sm-7'>A very warm welcome to you " . strtok($sf_user->getAttribute('user')->getName(), ' ') . "</div> <!--<div class='col-sm-5' id='emoji' style='font-size:28px;'>&#128512;</div>--></div>";
+          echo "<div class='row'><div class='col-sm-12'>A very warm welcome to you " . strtok($sf_user->getAttribute('user')->getName(), ' ') . " &ndash; I hope you're having a wonderful day &#128512;</div> <!--<div class='col-sm-5' id='emoji' style='font-size:28px;'>&#128512;</div>--></div>";
         }
       ?> 
     </h3> 
   </div>
-
-  <div class="col-sm-3">
-    
-  </div>
   
-  <div class="col-sm-4">
+  <div class="col-sm-2">
     <?php echo '<div id="dashboard-csg-box">' . button_tag_modalbox(__('Configure Dashboard'),'dashboard/configure') . '</div>'; ?>
   </div>
 </div>
 
-<?php } ?>
+
+
 
 <?php
   
@@ -153,10 +141,7 @@
 
 <?php
   if($sf_user->getAttribute('id') == 13){ 
-    echo "<script>
-      const element1 = document.querySelector('#emoji');
-      element1.classList.add('animate__animated', 'animate__bounce', 'animate__infinite');
-    </script>";
+   
   }
 ?> 
 

@@ -288,3 +288,12 @@ Aug 21 15:45:29 symfony [crit] {Doctrine_Record_UnknownPropertyException} Unknow
 Aug 21 15:45:47 symfony [crit] {Doctrine_Record_UnknownPropertyException} Unknown record property / related component "getId" on "DriveTrackers"
 Aug 21 15:46:00 symfony [crit] {Doctrine_Record_UnknownPropertyException} Unknown record property / related component "0" on "Projects"
 Aug 21 17:09:36 symfony [err] {sfError404Exception} Action "z800/var" does not exist.
+Aug 22 10:29:38 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/images/container.png" (/).
+Aug 22 10:34:06 symfony [err] {sfError404Exception} Action "images/matt" does not exist.
+Aug 22 10:45:07 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/nice%20ports%2C/Tri%6Eity.txt%2ebak" (/).
+Aug 22 10:59:51 symfony [err] {sfError404Exception} Action "images/matt" does not exist.
+Aug 22 11:00:07 symfony [err] {sfError404Exception} Action "images/matt" does not exist.
+Aug 22 11:00:20 symfony [err] {sfError404Exception} Action "images/matt" does not exist.
+Aug 22 12:00:59 symfony [err] {sfError404Exception} Action "images/matt" does not exist.
+Aug 22 12:01:11 symfony [err] {sfError404Exception} Action "images/matt" does not exist.
+Aug 27 16:48:50 symfony [err] {sfError404Exception} Action "z800/var" does not exist.
