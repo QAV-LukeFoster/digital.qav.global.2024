@@ -49,3 +49,251 @@ Aug 15 10:49:10 symfony [crit] {InvalidArgumentException} Widget "project_driveT
 Aug 15 10:49:48 symfony [crit] {InvalidArgumentException} Widget "project_drive_trackers_id" does not exist.
 Aug 15 14:20:14 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/nice%20ports%2C/Tri%6Eity.txt%2ebak" (/).
 Aug 15 15:15:13 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/audio/small_world.mp3" (/).
+Aug 19 10:39:36 symfony [crit] {InvalidArgumentException} Widget "extra_fields_22" does not exist.
+Aug 19 10:40:10 symfony [crit] {InvalidArgumentException} Widget "extra_fields[22]" does not exist.
+Aug 19 10:40:56 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/projects/" (/).
+Aug 19 11:18:52 symfony [crit] {Doctrine_Record_UnknownPropertyException} Unknown record property / related component "project_size_value" on "Projects"
+Aug 19 11:22:03 symfony [crit] {Doctrine_Record_UnknownPropertyException} Unknown record property / related component "project_size_value" on "Projects"
+Aug 19 11:22:05 symfony [crit] {Doctrine_Record_UnknownPropertyException} Unknown record property / related component "project_size_value" on "Projects"
+Aug 19 11:24:34 symfony [crit] {Doctrine_Record_UnknownPropertyException} Unknown record property / related component "project_size_value" on "Projects"
+Aug 19 11:24:51 symfony [crit] {Doctrine_Record_UnknownPropertyException} Unknown record property / related component "project_size_value" on "Projects"
+Aug 19 11:30:51 symfony [crit] {Doctrine_Record_UnknownPropertyException} Unknown record property / related component "project_size_value" on "Projects"
+Aug 19 11:30:52 symfony [crit] {Doctrine_Record_UnknownPropertyException} Unknown record property / related component "project_size_value" on "Projects"
+Aug 19 11:30:53 symfony [crit] {Doctrine_Record_UnknownPropertyException} Unknown record property / related component "project_size_value" on "Projects"
+Aug 19 11:37:27 symfony [crit] {Doctrine_Record_UnknownPropertyException} Unknown record property / related component "project_size_value" on "Projects"
+Aug 19 11:38:22 symfony [crit] {Doctrine_Record_UnknownPropertyException} Unknown record property / related component "project_size_value" on "Projects"
+Aug 19 12:15:24 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/projects/" (/).
+Aug 19 15:14:56 symfony [crit] {Doctrine_Exception} Couldn't find class DriveTracker
+Aug 19 16:26:11 symfony [crit] {Doctrine_Connection_Mysql_Exception} SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+Aug 19 16:52:42 symfony [crit] {Doctrine_Connection_Mysql_Exception} SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+Aug 19 16:53:08 symfony [crit] {Doctrine_Connection_Mysql_Exception} SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+Aug 19 16:53:59 symfony [crit] {Doctrine_Connection_Mysql_Exception} SQLSTATE[HY093]: Invalid parameter number: parameter was not defined
+Aug 19 16:55:40 symfony [crit] {Doctrine_Connection_Mysql_Exception} SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+Aug 19 16:58:51 symfony [crit] {Doctrine_Query_Exception} Unknown component alias u
+Aug 19 16:59:20 symfony [crit] {Doctrine_Connection_Mysql_Exception} SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+Aug 19 17:05:12 symfony [crit] {Doctrine_Connection_Mysql_Exception} SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+Aug 19 17:05:45 symfony [crit] {Doctrine_Connection_Mysql_Exception} SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+Aug 20 13:27:01 symfony [err] {sfError404Exception} Action "template/images" does not exist.
+Aug 20 13:27:35 symfony [err] {sfError404Exception} Action "template/image" does not exist.
+Aug 20 13:27:59 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/images/disney.svg" (/).
+Aug 20 16:23:36 symfony [crit] {Doctrine_Connection_Mysql_Exception} SQLSTATE[42S22]: Column not found: 1054 Unknown column 'p.project_drive_trackers_id' in 'on clause'. Failing Query: "SELECT `d`.`id` AS `d__id`, `d`.`name` AS `d__name`, `d`.`type` AS `d__type`, `d`.`encrypt_id` AS `d__encrypt_id`, `d`.`encrypt_key` AS `d__encrypt_key`, `d`.`associations` AS `d__associations`, `d`.`legacy` AS `d__legacy`, `d`.`legacy_info` AS `d__legacy_info`, `d`.`capacity` AS `d__capacity`, `d`.`free_space` AS `d__free_space`, `d`.`record_disabled` AS `d__record_disabled`, `d`.`year` AS `d__year`, `d`.`active` AS `d__active`, `p`.`id` AS `p__id`, `p`.`projects_status_id` AS `p__projects_status_id`, `p`.`projects_types_id` AS `p__projects_types_id`, `p`.`projects_drive_trackers_id` AS `p__projects_drive_trackers_id`, `p`.`created_by` AS `p__created_by`, `p`.`name` AS `p__name`, `p`.`description` AS `p__description`, `p`.`team` AS `p__team`, `p`.`created_at` AS `p__created_at`, `p`.`order_tasks_by` AS `p__order_tasks_by` FROM `drive_trackers` `d` LEFT JOIN `projects` `p` ON `d`.`id` = `p`.`project_drive_trackers_id` WHERE (`d`.`id` != 1)"
+Aug 20 16:27:16 symfony [crit] {Doctrine_Record_UnknownPropertyException} Unknown record property / related component "<pre>
+alias : DriveTrackers
+foreign : id
+local : projects_drive_trackers_id
+class : DriveTrackers
+type : 0
+table : Object(DriveTrackersTable)
+localTable : Object(ProjectsTable)
+name : 
+refTable : 
+onDelete : 
+onUpdate : 
+deferred : 
+deferrable : 
+constraint : 
+equal : 
+cascade : Array
+owningSide : 
+refClassRelationAlias : 
+foreignKeyName : 
+orderBy : 
+</pre>" on "Projects"
+Aug 20 16:32:58 symfony [crit] {Doctrine_Record_UnknownPropertyException} Unknown record property / related component "<pre>
+alias : DriveTrackers
+foreign : id
+local : projects_drive_trackers_id
+class : DriveTrackers
+type : 0
+table : Object(DriveTrackersTable)
+localTable : Object(ProjectsTable)
+name : 
+refTable : 
+onDelete : 
+onUpdate : 
+deferred : 
+deferrable : 
+constraint : 
+equal : 
+cascade : Array
+owningSide : 
+refClassRelationAlias : 
+foreignKeyName : 
+orderBy : 
+</pre>" on "Projects"
+Aug 20 16:38:24 symfony [crit] {Doctrine_Record_UnknownPropertyException} Unknown record property / related component "<pre>
+alias : DriveTrackers
+foreign : id
+local : projects_drive_trackers_id
+class : DriveTrackers
+type : 0
+table : Object(DriveTrackersTable)
+localTable : Object(ProjectsTable)
+name : 
+refTable : 
+onDelete : 
+onUpdate : 
+deferred : 
+deferrable : 
+constraint : 
+equal : 
+cascade : Array
+owningSide : 
+refClassRelationAlias : 
+foreignKeyName : 
+orderBy : 
+</pre>" on "Projects"
+Aug 21 09:38:18 symfony [crit] {Doctrine_Record_UnknownPropertyException} Unknown record property / related component "<pre>
+alias : DriveTrackers
+foreign : id
+local : projects_drive_trackers_id
+class : DriveTrackers
+type : 0
+table : Object(DriveTrackersTable)
+localTable : Object(ProjectsTable)
+name : 
+refTable : 
+onDelete : 
+onUpdate : 
+deferred : 
+deferrable : 
+constraint : 
+equal : 
+cascade : Array
+owningSide : 
+refClassRelationAlias : 
+foreignKeyName : 
+orderBy : 
+</pre>" on "Projects"
+Aug 21 09:39:35 symfony [crit] {Doctrine_Record_UnknownPropertyException} Unknown record property / related component "<pre>
+alias : DriveTrackers
+foreign : id
+local : projects_drive_trackers_id
+class : DriveTrackers
+type : 0
+table : Object(DriveTrackersTable)
+localTable : Object(ProjectsTable)
+name : 
+refTable : 
+onDelete : 
+onUpdate : 
+deferred : 
+deferrable : 
+constraint : 
+equal : 
+cascade : Array
+owningSide : 
+refClassRelationAlias : 
+foreignKeyName : 
+orderBy : 
+</pre>" on "Projects"
+Aug 21 09:41:45 symfony [crit] {Doctrine_Record_UnknownPropertyException} Unknown record property / related component "<pre>
+alias : DriveTrackers
+foreign : id
+local : projects_drive_trackers_id
+class : DriveTrackers
+type : 0
+table : Object(DriveTrackersTable)
+localTable : Object(ProjectsTable)
+name : 
+refTable : 
+onDelete : 
+onUpdate : 
+deferred : 
+deferrable : 
+constraint : 
+equal : 
+cascade : Array
+owningSide : 
+refClassRelationAlias : 
+foreignKeyName : 
+orderBy : 
+</pre>" on "Projects"
+Aug 21 09:42:08 symfony [crit] {Doctrine_Record_UnknownPropertyException} Unknown record property / related component "<pre>
+alias : DriveTrackers
+foreign : id
+local : projects_drive_trackers_id
+class : DriveTrackers
+type : 0
+table : Object(DriveTrackersTable)
+localTable : Object(ProjectsTable)
+name : 
+refTable : 
+onDelete : 
+onUpdate : 
+deferred : 
+deferrable : 
+constraint : 
+equal : 
+cascade : Array
+owningSide : 
+refClassRelationAlias : 
+foreignKeyName : 
+orderBy : 
+</pre>" on "Projects"
+Aug 21 09:45:14 symfony [crit] {Doctrine_Record_UnknownPropertyException} Unknown record property / related component "<pre>
+alias : DriveTrackers
+foreign : id
+local : projects_drive_trackers_id
+class : DriveTrackers
+type : 0
+table : Object(DriveTrackersTable)
+localTable : Object(ProjectsTable)
+name : 
+refTable : 
+onDelete : 
+onUpdate : 
+deferred : 
+deferrable : 
+constraint : 
+equal : 
+cascade : Array
+owningSide : 
+refClassRelationAlias : 
+foreignKeyName : 
+orderBy : 
+</pre>" on "Projects"
+Aug 21 09:49:41 symfony [crit] {Doctrine_Record_UnknownPropertyException} Unknown record property / related component "<pre>
+alias : DriveTrackers
+foreign : id
+local : projects_drive_trackers_id
+class : DriveTrackers
+type : 0
+table : Object(DriveTrackersTable)
+localTable : Object(ProjectsTable)
+name : 
+refTable : 
+onDelete : 
+onUpdate : 
+deferred : 
+deferrable : 
+constraint : 
+equal : 
+cascade : Array
+owningSide : 
+refClassRelationAlias : 
+foreignKeyName : 
+orderBy : 
+</pre>" on "Projects"
+Aug 21 09:58:40 symfony [crit] {Doctrine_Record_UnknownPropertyException} Unknown record property / related component "p.id" on "Projects"
+Aug 21 10:38:39 symfony [crit] {Doctrine_Record_UnknownPropertyException} Unknown record property / related component "d.name" on "Projects"
+Aug 21 11:18:15 symfony [crit] {Doctrine_Exception} Couldn't find class p
+Aug 21 11:18:42 symfony [crit] {Doctrine_Connection_Mysql_Exception} SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'SELECT AS `d__0`, `d`.`name` AS `d__1` FROM `drive_trackers` `d` WHERE (`d`.`id`' at line 1. Failing Query: "SELECT SELECT AS `d__0`, `d`.`name` AS `d__1` FROM `drive_trackers` `d` WHERE (`d`.`id` != 1)"
+Aug 21 11:19:25 symfony [crit] {Doctrine_Connection_Mysql_Exception} SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'SELECT AS `d__0`, 'name' AS `d__1` FROM `drive_trackers` `d` WHERE (`d`.`id` != ' at line 1. Failing Query: "SELECT SELECT AS `d__0`, 'name' AS `d__1` FROM `drive_trackers` `d` WHERE (`d`.`id` != 1)"
+Aug 21 11:24:44 symfony [crit] {Doctrine_Exception} Couldn't find class u
+Aug 21 11:30:19 symfony [crit] {Doctrine_Table_Exception} Unknown relation alias Projects
+Aug 21 11:45:25 symfony [crit] {Doctrine_Table_Exception} Unknown relation alias Projects
+Aug 21 11:47:27 symfony [crit] {Doctrine_Record_UnknownPropertyException} Unknown record property / related component "active" on "DriveTrackers"
+Aug 21 15:45:29 symfony [crit] {Doctrine_Record_UnknownPropertyException} Unknown record property / related component "0" on "Projects"
+Aug 21 15:45:47 symfony [crit] {Doctrine_Record_UnknownPropertyException} Unknown record property / related component "getId" on "DriveTrackers"
+Aug 21 15:46:00 symfony [crit] {Doctrine_Record_UnknownPropertyException} Unknown record property / related component "0" on "Projects"
+Aug 21 17:09:36 symfony [err] {sfError404Exception} Action "z800/var" does not exist.
+Aug 22 10:29:38 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/images/container.png" (/).
+Aug 22 10:34:06 symfony [err] {sfError404Exception} Action "images/matt" does not exist.
+Aug 22 10:45:07 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/nice%20ports%2C/Tri%6Eity.txt%2ebak" (/).
+Aug 22 10:59:51 symfony [err] {sfError404Exception} Action "images/matt" does not exist.
+Aug 22 11:00:07 symfony [err] {sfError404Exception} Action "images/matt" does not exist.
+Aug 22 11:00:20 symfony [err] {sfError404Exception} Action "images/matt" does not exist.
+Aug 22 12:00:59 symfony [err] {sfError404Exception} Action "images/matt" does not exist.
+Aug 22 12:01:11 symfony [err] {sfError404Exception} Action "images/matt" does not exist.
+Aug 27 16:48:50 symfony [err] {sfError404Exception} Action "z800/var" does not exist.

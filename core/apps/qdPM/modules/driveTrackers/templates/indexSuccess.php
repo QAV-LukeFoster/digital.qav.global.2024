@@ -30,12 +30,22 @@
         </thead>
         <tbody>
             <?php foreach ($drives as $drive): ?>
-                <tr>
+                <?php if($drive->getActive() == 2){ echo '<tr class="danger">'; }else{ echo '<tr class="default">'; } ?>
                     <td>
                         <?php echo 'X' . sprintf('%05d', $drive->getName()) ?>
                     </td>
                     <td>
-                        <?php echo $drive->getAssociations() ?>
+                        <?php 
+                        
+                            foreach ($associations as $association):
+                            
+                                if ($association['projects_drive_trackers_id'] == $drive->getId()){
+                                    echo '<div style="margin-bottom:3px;"><a class="btn-xs btn-warning" href="/tasks?projects_id=' . $association['id'] . '"> <i class="fa fa-arrow-right"></i></a> ' . $association['name'] . '</div>';
+                                }
+                            
+                            endforeach;
+                        
+                        ?>
                     </td>
                     <td>
                         <?php echo $drive->getType() ?>

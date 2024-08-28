@@ -32,7 +32,7 @@
 
 <div class="row">
     
-  <div class="col-md-7">      
+  <div class="col-md-2">      
       <div class="itemInfo projectInfo">
         <div class="itemInfoContainer">
           <div class="itemDescription"><?php echo  replaceTextToLinks($projects->getDescription()) ?></div>
@@ -44,7 +44,7 @@
       
   </div>
     
-  <div class="col-md-5">
+  <div class="col-md-10">
   
       <div class="panel panel-info">
     		<div class="panel-heading">  			

@@ -608,6 +608,13 @@ Projects:
       primary: false
       notnull: false
       autoincrement: false
+    projects_drive_trackers_id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
     created_by:
       type: integer(4)
       fixed: false
@@ -658,6 +665,10 @@ Projects:
       type: one
     ProjectsTypes:
       local: projects_types_id
+      foreign: id
+      type: one
+    ProjectsDriveTrackers:
+      local: projects_drive_trackers_id
       foreign: id
       type: one
     Users:

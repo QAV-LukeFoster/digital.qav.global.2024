@@ -24,20 +24,29 @@
 ?>
 <h3 class="page-title"><?php echo $projects->getName() ?></h3>
 
+<style>
+  a:link,
+  a:visited,
+  a:hover,
+  a:active {
+    text-decoration: none; 
+    color: #fff;
+  }
+</style>
+
 
 <div class="project-short-info">
   <table>
     <tr>
       
-      <?php if($projects->getProjectsStatusId()>0) echo '<td><div><span>' . __('Status') . ':</span> ' . $projects->getProjectsStatus()->getName() . '</div></td>';?>
-      <?php if($projects->getProjectsTypesId()>0) echo '<td><div><span>' . __('Type') . ':</span> ' . $projects->getProjectsTypes()->getName() . '</div></td>';?>
+      <?php if($projects->getProjectsStatusId()>0) echo '<td><div><span class="label label-default">' . __('Status') . '</span>&nbsp;&nbsp;' . $projects->getProjectsStatus()->getName() . '</div></td>';?>
+      <?php if($projects->getProjectsTypesId()>0) echo '<td><div><span class="label label-default">' . __('Type') . '</span>&nbsp;&nbsp;' . $projects->getProjectsTypes()->getName() . '</div></td>';?>
 
-      <td><?php echo link_to_modalbox(__('More Info'),'projects/info?id=' . $projects->getId()) ?></td>
-      <td><?php if(Users::hasAccess('edit','projects',$sf_user,$projects->getId())) echo link_to_modalbox(__('Edit Details'),'projects/edit?id=' . $projects->getId() . '&redirect_to=projectsComments') ?></td>
+      <td><span class="btn-sm btn-info"><?php echo link_to_modalbox(__('More Info'),'projects/info?id=' . $projects->getId()) ?></span></td>
+      <td><span class="btn-sm btn-warning"><?php if(Users::hasAccess('edit','projects',$sf_user,$projects->getId())) echo link_to_modalbox(__('Edit Details'),'projects/edit?id=' . $projects->getId() . '&redirect_to=projectsComments') ?></span></td>
     </tr>        
   </table>
 </div>
-
 
 <div id="projectMenuContainer">
   <div id="projectMenuBox"> 

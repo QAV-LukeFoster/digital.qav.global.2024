@@ -230,5 +230,16 @@ class Projects extends BaseProjects
    }           
    
    return $q;
-  }      
+  }
+
+  public static function getProjectSizeValue($bind_id)
+  {    
+    $value = Doctrine_Core::getTable('ExtraFieldsList')
+              ->createQuery()
+              ->addWhere('bind_id=?',$bind_id)
+              ->whereIn('extra_fields_id',22)
+              ->fetchArray();
+    
+    return $value;
+  }  
 }
