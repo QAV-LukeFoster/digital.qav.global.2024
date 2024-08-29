@@ -302,3 +302,5 @@ Aug 28 09:41:14 symfony [err] {sfError404Exception} Action "css/skins" does not 
 Aug 28 09:52:22 symfony [crit] {sfRenderException} The template "_styles.php" does not exist or is unreadable in "".
 Aug 29 10:07:39 symfony [err] {sfError404Exception} Action "z800/var" does not exist.
 Aug 29 10:08:57 symfony [err] {sfError404Exception} Action "z800/var" does not exist.
+Aug 29 11:13:11 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/favicon.ico" (/).
+Aug 29 11:14:19 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/favicon.ico" (/).

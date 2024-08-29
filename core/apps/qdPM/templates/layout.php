@@ -191,8 +191,8 @@
 </script>
 
 <script>
-	//const element = document.querySelector('#matt_disney');
-	//element.classList.add('animate__animated', 'animate__tada', 'animate__infinite');
+	const element = document.querySelector('#jh');
+	element.classList.add('animate__animated', 'animate__pulse', 'animate__infinite');
 
   //const hello = document.querySelector('#hello');
   //hello.classList.add('animate__animated', 'animate__bounceInDown', 'animate__delay-1s');
