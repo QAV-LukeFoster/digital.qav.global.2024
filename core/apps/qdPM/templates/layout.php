@@ -97,8 +97,8 @@
             
     <?php echo stylesheet_tag('app.css') ?>
     <?php
-      $skin = $sf_request->getCookie ('skin', sfConfig::get('app_default_skin','default')); 
-      echo (is_file('css/skins/' . $skin . '/' . $skin. '.css') ? stylesheet_tag('skins/' . $skin . '/' . $skin . '.css') : stylesheet_tag('skins/default/default.css')) 
+      //$skin = $sf_request->getCookie ('skin', sfConfig::get('app_default_skin','default')); 
+      echo stylesheet_tag('skins/WinterTones/WinterTones.css');
     ?> 
                                 
     <?php echo t::renderJsDictionary() ?>
@@ -112,40 +112,41 @@
     
     <!-- BEGIN CONTAINER -->
     <div class="page-container" style="">
-      <?php include_partial('global/sidebar'); ?>
+        <?php include_partial('global/sidebar'); ?>
 
-      <style>
-        .modal-header{
-          background:slategray;
-          color:#fff;
-        }
-        .modal-footer{
-          background:slategray;
-          color:#fff;
-        }
-      </style>
+        <style>
+          .modal-header{
+            background:slategray;
+            color:#fff;
+          }
+          .modal-footer{
+            background:slategray;
+            color:#fff;
+          }
+        </style>
       
-      <!-- BEGIN CONTENT --> 
-      <div class="page-content-wrapper">
+          <!-- BEGIN CONTENT --> 
+          <div class="page-content-wrapper">
 
       
-          <div class="page-content" style="background-color:snow; min-height:90vh;">
-    
-            
-            <div id="ajax-modal" class="modal fade" tabindex="-1" data-replace="true" data-keyboard="true" data-backdrop="static" data-focus-on=".autofocus" style="background-image: url(<?php echo public_path('images/container.png') ?>); background-size:cover; background-repeat:no-repeat;"></div>
-                                 
-              <?php if($sf_user->hasFlash('userNotices')) include_partial('global/userNotices', array('userNotices' => $sf_user->getFlash('userNotices'))); ?>
-              <?php if(is_dir(sfConfig::get('sf_web_dir') . '/install')) include_partial('global/userNotices', array('userNotices' => array('text'=>__('Please remove \'install\' folder'),'type'=>'warning'))); ?>
-              
-              <?php //include_partial('global/styles'); ?>
+                <div class="page-content" style="background-color:snow; min-height:90vh;">
+          
+                  
+                        <div id="ajax-modal" class="modal fade" tabindex="-1" data-replace="true" data-keyboard="true" data-backdrop="static" data-focus-on=".autofocus" style="background-image: url(<?php echo public_path('images/container.png') ?>); background-size:cover; background-repeat:no-repeat;"></div>
+                                            
+                          <?php if($sf_user->hasFlash('userNotices')) include_partial('global/userNotices', array('userNotices' => $sf_user->getFlash('userNotices'))); ?>
+                          <?php if(is_dir(sfConfig::get('sf_web_dir') . '/install')) include_partial('global/userNotices', array('userNotices' => array('text'=>__('Please remove \'install\' folder'),'type'=>'warning'))); ?>
+                          
+                          <?php //include_partial('global/styles'); ?>
 
-              <?php echo $sf_content ?> 
-              <!-- END PAGE CONTENT-->
-              
-      		  </div>
-            
+                          <?php echo $sf_content ?> 
+                          <!-- END PAGE CONTENT-->
+                          
+                        
+                  
+                </div>
+                <!-- END CONTENT -->
           </div>
-          <!-- END CONTENT -->
           
       </div>
     <!-- END CONTAINER -->
