@@ -97,8 +97,8 @@
             
     <?php echo stylesheet_tag('app.css') ?>
     <?php
-      $skin = $sf_request->getCookie ('skin', sfConfig::get('app_default_skin','default')); 
-      echo (is_file('css/skins/' . $skin . '/' . $skin. '.css') ? stylesheet_tag('skins/' . $skin . '/' . $skin . '.css') : stylesheet_tag('skins/WinterTones/WinterTones.css')) 
+      //$skin = $sf_request->getCookie ('skin', sfConfig::get('app_default_skin','default')); 
+      echo stylesheet_tag('skins/WinterTones/WinterTones.css');
     ?> 
                                 
     <?php echo t::renderJsDictionary() ?>
