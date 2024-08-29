@@ -23,12 +23,14 @@
 */
 ?>
 
-  <div class="row" style="margin-bottom:20px; margin-left:2px;">
+<div class="row" style="margin-bottom:20px; margin-left:2px;">
   <div class="col-sm-10">
     <h3 style="font-weight:bold;">
       <?php
         if($sf_user->getAttribute('id') == 13){ 
-          echo " <div id='emoji' style=''>Mathew &ndash; age is of no importance unless you're a cheese &#129472;</div> ";
+          echo "<!--<div id='emoji' style=''>
+                    Mathew &ndash; age is of no importance unless you're a cheese &#129472;
+                </div>-->";
         }else{
           echo "<div class='row'><div class='col-sm-12'>A very warm welcome to you " . strtok($sf_user->getAttribute('user')->getName(), ' ') . " &ndash; I hope you're having a wonderful day &#128512;</div> <!--<div class='col-sm-5' id='emoji' style='font-size:28px;'>&#128512;</div>--></div>";
         }
@@ -37,12 +39,178 @@
   </div>
   
   <div class="col-sm-2">
-    <?php echo '<div id="dashboard-csg-box">' . button_tag_modalbox(__('Configure Dashboard'),'dashboard/configure') . '</div>'; ?>
+    <?php  if($sf_user->getAttribute('id') != 13){   echo '<div id="dashboard-csg-box">' . button_tag_modalbox(__('Configure Dashboard'),'dashboard/configure') . '</div>'; }; ?>
   </div>
 </div>
+<style>
+        .blns {
+          border:#5cb85c 5px solid;
+          overflow:hidden;
+          position: relative;
+          width: 1660px; height: 700px;
+        }
+        .blns div {
+          top: 425px; left: 0;
+          position: absolute;
+          width: 131px; height: 159px;
+          border-radius: 50%;
+          &:before {
+            content: "";
+            position: absolute;
+            bottom: -7px; right: 50%;
+            width: 0; height: 0;
+            margin-right: -10px;
+            border-left: 8px solid transparent;
+            border-right: 8px solid transparent;
+            border-bottom: 13px solid #c03940;
+          }
+          &:after {
+            content: "";
+            position: absolute;
+            width: 11px; height: 14px;
+            border-radius: 50%;
+            background: white;
+            top: 30px; left: 35px;
+            transform: rotate(45deg);
+            background: linear-gradient(to bottom, rgba(255,255,255,.8), rgba(255,255,255,.2));
+          }
+          &[class^='bln-1'] {
+            height: 145px;
+            background-image: radial-gradient(ellipse farthest-corner at 45px 45px , #b0cb47 0%, #3d954b 50%);
+            transform: rotate(20deg);
+            &:before {
+              border-bottom-color: #3d954b;
+            }
+          }
+          &[class^='bln-2'] {
+            width: 122px; height: 141px;
+            background-image: radial-gradient(ellipse farthest-corner at 45px 45px , #3bc0f0 0%, #0075bc 50%);
+            transform: rotate(-20deg);
+            &:before {
+              border-bottom-color: #0075bc;
+            }
+          }
+          &[class^='bln-3'] {
+            background-image: radial-gradient(ellipse farthest-corner at 45px 45px , #f89640 0%, #c03940 50%);
+            &:before {
+              border-bottom-color: #c03940;
+            }
+          }
+          &[class^='bln-4'] {
+            width: 132px; height: 151px;
+            background-image: radial-gradient(ellipse farthest-corner at 45px 45px , #cf85b8 0%, #a3509d 50%);
+            transform: rotate(5deg);
+            &:before {
+              border-bottom-color: #a3509d;
+            }
+          }
+          &[class^='bln-5'] {
+            width: 137px; height: 142px;
+            background-image: radial-gradient(ellipse farthest-corner at 45px 45px , #ffec37 0%, #f8b13d 50%);
+            transform: rotate(7deg);
+            &:before {
+              border-bottom-color: #f8b13d;
+            }
+          } 
+        }
+      </style>
 
 
+<?php
+  if($sf_user->getAttribute('id') == 13){ 
+    echo '
+      
 
+      <div class="row" style="margin-top:50px;">
+        <div class="col-sm-12" style="min-height:75%;">
+          <div class="blns">
+            <div class="bln-1"></div>
+          </div>
+        </div>
+      </div>
+    
+    ';
+  }
+?> 
+<?php
+  if($sf_user->getAttribute('id') == 13){ 
+    echo "
+<script>
+  var windowWidth = 1670;
+  var windowHeight = 700;
+
+  function pickANumber(max, min) {
+    return Math.random() * (max - min + min) + min;
+  }
+
+  function changeColors(el) {
+    el.removeClass();
+    var random = Math.floor(pickANumber(5,1));
+    el.addClass('bln-'+random+'-clone');
+  }
+
+  function resetBalloon(el) {
+    changeColors(el);
+
+    var scale = (pickANumber(0.9,0.5)).toFixed(1);
+    el.css('transform', 'scale(' + scale + ')');
+
+    var x = Math.floor(Math.random() * windowWidth);
+    el.css('left', x);
+    var y = Math.floor(Math.random() * 300 + windowHeight);
+    el.css('top', y);
+    releaseBalloon(el);
+  }
+
+  function releaseBalloon(el) {
+    var maxbllnSpeed = Math.floor(Math.random() * 10000 + 3000);
+    var wind = Math.floor(Math.random() * - 30);
+    var rotate = Math.floor(Math.random() * 560) + 100;  
+
+
+    el.animate(
+      { 
+        top: '-150px',
+        left: '+=' + wind + 0,
+      }, {
+      step: function() {
+        el.css({
+          transform: 'rotate('+rotate+'deg)',
+          transition: 'transform '+ maxbllnSpeed * .001  +'s linear'
+        });
+      },
+      duration: maxbllnSpeed,
+      easing: 'linear',
+      complete: function() {
+        resetBalloon(el);
+      }
+    });
+
+  }
+
+  function blowUpBalloons() {
+    for (i = 0; i < 100; i++) {
+      var el = $('.bln-1').clone();
+      el.appendTo('.blns');
+
+      resetBalloon(el);
+
+      var position = el.position();
+
+      if (position.top > windowHeight || position.left > windowWidth || position.left < -100) {
+        resetBalloon(el);
+      } else {
+        //releaseBalloon(el);
+      }
+
+    }
+  }
+
+  blowUpBalloons(); 
+</script>
+    ";
+  }
+?> 
 
 <?php
   
