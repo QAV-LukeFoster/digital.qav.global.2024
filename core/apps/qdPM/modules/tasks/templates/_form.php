@@ -151,10 +151,8 @@
             	</div>
             </div>
 
-            
             <?php echo ExtraFieldsList::renderFormFiledsByType('tasks',$form->getObject(),$sf_user,'text')?>
             <?php echo ExtraFieldsList::renderFormFiledsByType('tasks',$form->getObject(),$sf_user,'file')?>
-            
             
             <?php if(Users::hasAccess('edit','projects',$sf_user,$sf_request->getParameter('projects_id')) and $form->getObject()->isNew()): ?>            
             <div class="form-group">
@@ -163,12 +161,9 @@
             		<?php echo $form['created_by'] ?>
             	</div>
             </div>                       
-            <?php endif ?>
-                        
+            <?php endif ?>        
           </div>
-          
-          
-            
+
           <div class="tab-pane fade" id="tab_time">
           
             <div class="form-group">
