@@ -366,7 +366,7 @@ class menuController
                   'class'=>'fa-lock',
                   'url'=>'driveTracker/index',
                   'submenu'=>array(                    
-                     array('title'=>'Key Safe','url'=>'driveTrackers/index'),                                                                                                   
+                     array('title'=>'Drive archive','url'=>'driveTrackers/index'),                                                                                                   
                   ));
   }
   

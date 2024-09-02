@@ -1,4 +1,4 @@
-<h3 class="page-title"><?php echo __('Key Safe') ?></h3>
+<h3 class="page-title"><?php echo __('Drive Archive') ?></h3>
 
 <?php
     $lc = new cfgListingController($sf_context->getModuleName());

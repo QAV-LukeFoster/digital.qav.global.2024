@@ -31,7 +31,7 @@ class driveTrackersActions extends sfActions
     $this->drives = $table;
     $this->getNewDriveName = DriveTrackers::getNextDriveName();
 
-    app::setPageTitle('Key Safe',$this->getResponse());
+    app::setPageTitle('Drive Archive',$this->getResponse());
   }
 
   public function executeNew(sfWebRequest $request)
