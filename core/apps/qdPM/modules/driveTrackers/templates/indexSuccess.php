@@ -46,7 +46,7 @@
                             endforeach;
                         
                         ?>
-                    </td>
+                    </td>/
                     <td>
                         <?php echo $drive->getType() ?>
                     </td>
