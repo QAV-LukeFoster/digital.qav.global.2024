@@ -38,7 +38,7 @@
 
 <?php echo $form->renderGlobalErrors() ?>
 
-<ul class="nav nav-tabs">
+<ul class="nav nav-pills nav-justified">
 	<li class="active">
     <a href="#tab_general" data-toggle="tab"><?php echo __('General') ?></a>
   </li>

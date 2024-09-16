@@ -366,7 +366,24 @@ blockquote p {
     padding:0;
 }
 
+.nav-pills > li.active > a, .nav-pills > li.active > a:focus {
+  color: white;
+  background-color: #5cb85c;
+}
 
+.nav-pills > li.active > a:hover {
+    background-color: #5cb85c;
+    color:white;
+}
+.nav-pills > li > a, .nav-pills > a:focus {
+    color: white;
+    background-color: #7c8184;
+}
+
+.nav-pills > li > a:hover {
+    background-color: #7c8184;
+    color:white;
+}
 
 
 

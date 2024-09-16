@@ -535,7 +535,7 @@ class app
             foreach (app::getItemsChoicesByTable($t, false, $projects_id, $sf_user) as $k => $v)
             {
 
-                $s[] = array('title' => '<table><tr><td style="padding-right: 10px;"><input class="' . $t . 'Filters' . $ft . ' toggle" name="' . $t . $k . '" id="' . $t . $k . '" value="' . $k . '" ' . (in_array($k, $selected) ? 'checked="checked"' : '') . ' type="checkbox"></td><td>' . link_to($v, $path, array('query_string' => 'filter_by[' . $t . ']=' . $k . ($params ? '&' . $params : ''))) . '</td></table>');
+                $s[] = array('title' => '<table><tr><td style="padding-right: 10px; color:#000;"><input class="' . $t . 'Filters' . $ft . ' toggle" name="' . $t . $k . '" id="' . $t . $k . '" value="' . $k . '" ' . (in_array($k, $selected) ? 'checked="checked"' : '') . ' type="checkbox"></td><td>' . link_to($v, $path, array('query_string' => 'filter_by[' . $t . ']=' . $k . ($params ? '&' . $params : ''))) . '</td></table>');
             }
 
             $s[] = array('title' => '<form id="filter_by_' . $t . '_form" action="' . url_for($path . ($params ? '?' . $params : '')) . '" method="post">' . input_hidden_tag('filter_by[' . $t . ']', '') . '<table onClick="filter_by_selected(\'' . $t . '\',\'' . $ft . '\')"><tr><td style="padding-right: 10px;">' . image_tag('icons/arrow_up.png') . '</td><td>' . __('Filter by selected') . '</td></table></form>', 'is_hr' => true);
@@ -600,7 +600,7 @@ class app
             }
         }
 
-        $s[] = array('title' => '<form id="filter_by_' . $t . '_form" action="' . url_for($path . ($params ? '?' . $params : '')) . '" method="post">' . input_hidden_tag('filter_by[' . $t . ']', '') . '<table onClick="filter_by_selected(\'' . $t . '\',\'' . $ft . '\')"><tr><td style="padding-right: 10px;">' . image_tag('icons/arrow_up.png') . '</td><td>' . __('Filter by selected') . '</td></table></form>', 'is_hr' => true);
+        $s[] = array('title' => '<form id="filter_by_' . $t . '_form" action="' . url_for($path . ($params ? '?' . $params : '')) . '" method="post">' . input_hidden_tag('filter_by[' . $t . ']', '') . '<table onClick="filter_by_selected(\'' . $t . '\',\'' . $ft . '\')"><tr><td style="padding-right: 10px; color:#000;">' . image_tag('icons/arrow_up.png') . '</td><td>' . __('Filter by selected') . '</td></table></form>', 'is_hr' => true);
 
         $m[] = array('title' => __($title), 'submenu' => $s);
 
@@ -650,7 +650,7 @@ class app
         foreach ($projects_list as $v)
         {
             $k = $v['id'];
-            $s[] = array('title' => '<table><tr><td style="padding-right: 10px;"><input class="' . $t . 'Filters' . $ft . ' toggle" name="' . $t . $k . '" id="' . $t . $k . '" value="' . $k . '" ' . (in_array($k, $selected) ? 'checked="checked"' : '') . ' type="checkbox"></td><td>' . link_to(app::truncate_text($v['name']), $path, array('query_string' => 'filter_by[' . $t . ']=' . $k . ($params ? '&' . $params : ''))) . '</td></table>');
+            $s[] = array('title' => '<table><tr><td style="padding-right: 10px;"><input class="' . $t . 'Filters' . $ft . ' toggle" name="' . $t . $k . '" id="' . $t . $k . '" value="' . $k . '" ' . (in_array($k, $selected) ? 'checked="checked"' : '') . ' type="checkbox"></td><td style="color:#000;">' . link_to(app::truncate_text($v['name']), $path, array('query_string' => 'filter_by[' . $t . ']=' . $k . ($params ? '&' . $params : ''))) . '</td></table>');
         }
         $s[] = array('title' => '<form id="filter_by_' . $t . '_form" action="' . url_for($path . ($params ? '?' . $params : '')) . '" method="post">' . input_hidden_tag('filter_by[' . $t . ']', '') . '<table onClick="filter_by_selected(\'' . $t . '\',\'' . $ft . '\')"><tr><td style="padding-right: 10px;">' . image_tag('icons/arrow_up.png') . '</td><td>' . __('Filter by selected') . '</td></table></form>', 'is_hr' => true);
         $m[] = array('title' => __('Projects'), 'submenu' => $s, 'is_hr' => true);

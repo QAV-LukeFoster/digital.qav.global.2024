@@ -38,6 +38,9 @@
 
 <?php echo $form->renderGlobalErrors() ?>
 
+<style>
+    
+</style>
                
 <ul class="nav nav-pills nav-justified">
 	<li class="active">
